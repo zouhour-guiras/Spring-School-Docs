@@ -25,7 +25,7 @@ voici comment faire une structure html
 
 ### Code with a specific langage
 
-```
+```py linenums="1" 
 import tensorflow as tf
 def whaterver()
  return 0
