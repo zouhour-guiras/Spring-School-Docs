@@ -1,3 +1,5 @@
+<img src="./assets/efrei.png" width="50" height="50">
+
 # HomePage
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
