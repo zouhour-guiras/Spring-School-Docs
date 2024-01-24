@@ -1,7 +1,6 @@
-site_name: MkDocs Spring school 
+site_name: PC001 - Web Development 
 site_url: https://zouhour-guiras.github.io/Spring-School-Docs/
 theme:
-  logo: D:/Spring-School-Docs/assets/tomate.jpg
   name: material
   features:
    - navigation.tabs
@@ -19,13 +18,13 @@ theme:
      toggle:
       icon: material/toggle-switch-off-outline 
       name: Switch to dark mode
-     primary: teal
+     primary: Royalblueue
      accent: purple 
    - scheme: slate 
      toggle:
       icon: material/toggle-switch
       name: Switch to light mode   
-     primary: teal
+     primary: Royalblue
      accent: lime 
 
 markdown_extensions:
