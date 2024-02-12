@@ -17,6 +17,7 @@
 
 ![A little bit of history](little_history.png)
 
+![A little bit of history](history2.png)
 some `code` goes here
 ### un code à tester
 
