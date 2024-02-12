@@ -12,6 +12,11 @@
 ### <div style="color: Royalblue;"> The Web: what you need to know! </div>
 
 ![what you need to know!](What_you_need_to_know.png)
+
+### <div style="color: Royalblue;"> A little bit of history… </div>
+
+![A little bit of history](little_history.png)
+
 some `code` goes here
 ### un code à tester
 
