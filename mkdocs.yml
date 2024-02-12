@@ -13,6 +13,9 @@ theme:
    - content.code.annotation
    - content.code.copy
   language: en
+  extra:
+   logo:
+    href: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNCyK1aPBvnM7i34FkQdl4a9iY3bHnk_r-XQpIBjQxdw&s'
   palette:
    - scheme: default
      toggle:
@@ -25,9 +28,10 @@ theme:
       icon: material/toggle-switch
       name: Switch to light mode   
      primary: Royalblue
-     accent: lime 
+     accent: lime
 
 markdown_extensions:
+ - mdx_gh_links
  - pymdownx.highlight:
     anchor_linenums: true
  - pymdownx.inlinehilite
@@ -43,6 +47,7 @@ markdown_extensions:
  - pymdownx.emoji:
     emoji_index: !!python/name:material.extensions.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 copyright: |
  &copy; 2024 <a href="https://github.com/zouhour-guiras"  target="_blank" rel="noopener">Zouhour Guiras</a>
