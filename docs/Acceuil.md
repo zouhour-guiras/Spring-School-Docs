@@ -6,7 +6,7 @@
 
 ## <div style="color: Royalblue;"> Description </div>
 
-This course is to teach methods and techniques that enable managers to lead large projects while controlling costs, avoiding delays, and ensuring quality.
+The aim of this course is to teach methods and techniques that enable managers to lead large projects while controlling costs, avoiding delays, and ensuring quality.
 The students will be taught the key tools for project Management. They will have to apply them to a very concrete project: A Web site Design based on customer requirements.
 
 
@@ -20,7 +20,7 @@ Discover the evolution of the Web, from its creation to the present day.
 
 ## <div style="color: Royalblue;"> Project requirements </div>
 
-- The students will be organized in 4 groups (including a Project leader, a Technical Manager, a Design manager, a Communication Manager), and will work on 4 different Websites (Museum, School, Travel Agency, Restaurant). 
+- The students will be organized in 4 groups (including a Project leader, a Technical Manager, a Design manager and a Communication Manager), and will work on 4 different Websites (Museum, School, Travel Agency and Restaurant). 
 
 - Through the course, the students will have to face practical issues jeopardizing or slowing down the process, to enable them to cope with it in their future professional life.
 
