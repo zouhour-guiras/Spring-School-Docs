@@ -1,0 +1,911 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://zouhour-guiras.github.io/Spring-School-Docs/Chapter%202/">
+      
+      
+        <link rel="prev" href="../Chapter%201/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Chapter 2 : Master the basic technologies of client-side Web development - PC001 - Web Development</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="Royalblueue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-2-master-the-basic-technologies-of-client-side-web-development" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PC001 - Web Development" class="md-header__button md-logo" aria-label="PC001 - Web Development" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PC001 - Web Development
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 2 : Master the basic technologies of client-side Web development
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="Royalblueue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="Royalblue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Acceuil/" class="md-tabs__link">
+        
+  
+    
+  
+  Acceuil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%201/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 1 : An introduction to the web
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 2 : Master the basic technologies of client-side Web development
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PC001 - Web Development" class="md-nav__button md-logo" aria-label="PC001 - Web Development" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    PC001 - Web Development
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Acceuil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acceuil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 : An introduction to the web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 2 : Master the basic technologies of client-side Web development
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2 : Master the basic technologies of client-side Web development
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+       Table of contents 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+       Introduction 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-page-languages-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+       Web page languages Frontend 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-learn-these-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+       Why learn these languages? 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-w3c-world-wide-web-consortium" class="md-nav__link">
+    <span class="md-ellipsis">
+       The W3C ! (World Wide Web Consortium)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html-hypertext-markup-language" class="md-nav__link">
+    <span class="md-ellipsis">
+       HTML : HyperText Markup Language 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-cascading-style-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+       CSS: Cascading Style Sheet 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS: Cascading Style Sheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#css-3" class="md-nav__link">
+    <span class="md-ellipsis">
+       CSS 3 
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsive-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsive Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media query
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flexbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-with-a-specific-langage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code with a specific langage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chapter-2-master-the-basic-technologies-of-client-side-web-development">Chapter 2 : Master the basic technologies of client-side Web development</h1>
+<h2 id="table-of-contents"><div style="color: Royalblue;"> Table of contents </div></h2>
+<ul>
+<li>HTML: presentation, DOM, structuring an html page and the notion of tags </li>
+<li>CSS: presentation, selector types and responsive design</li>
+<li>JavaScript basics: Basic concepts, functions and arrays, callback Functions, - events and DOM manipulation</li>
+<li>Advanced JavaScript: Objects, JSON and Storage. </li>
+</ul>
+<h2 id="introduction"><div style="color: Royalblue;"> Introduction </div></h2>
+<h5 id="web-page-languages-frontend"><div style="color: Royalblue;"> Web page languages Frontend </div></h5>
+<p><img alt="html_css" src="../html_css.png" style="width:450px;height:300px;" /></p>
+<h5 id="why-learn-these-languages"><div style="color: Royalblue;"> Why learn these languages? </div></h5>
+<p><img alt="Why_learn_fronted" src="../Why_learn_fronted.png" style="width:600px;height:300px;" /></p>
+<h5 id="the-w3c-world-wide-web-consortium"><div style="color: Royalblue;"> The W3C ! (World Wide Web Consortium)</div></h5>
+<p><img alt="w3c" src="../w3c.png" style="width:600px;height:180px;" /></p>
+<p>Check your code : <a href="https://validator.w3.org/">https://validator.w3.org/</a></p>
+<h2 id="html-hypertext-markup-language"><div style="color: Royalblue;"> HTML : HyperText Markup Language </div></h2>
+<p><img alt="html" src="../html.png" style="width:700px;height:350px;" /></p>
+<p><strong><div style="color: Royalblue;"> HTML : its versions</div></strong></p>
+<p><img alt="html_versions" src="../html_versions.png" style="width:700px;height:300px;" /></p>
+<p><strong><div style="color: Royalblue;"> HTML : the basics </div></strong></p>
+<p><img alt="html_basics" src="../html_basics.png" style="width:600px;height:300px;" /></p>
+<p><strong><div style="color: Royalblue;"> HTML : the Doctype </div></strong></p>
+<p>&nbsp;<code>&lt;!DOCTYPE html&gt;</code> <br>
+• A Doctype is a line of code used to indicate the type of your document.<br>
+• It specifies the defined standards that you will use in this document.<br>
+• The line of code containing the Doctype is inserted at the very beginning of the page. You can place it on the first line of your HTML document if you wish. <br>
+• The Doctype should always be before the <code>&lt;HTML&gt;</code> tag.<br>
+• For a developer, the Doctype is used to validate his pages according to the chosen W3C standards. <br>
+• Its main purpose is to tell browsers how to interpret the document - or web page.With the arrival of HTML 5, the doctype was thus simplified to the maximum: <br></p>
+<p><strong><div style="color: Royalblue;"> Create your first web page </div></strong>
+To create a web page, all you need to do is: <br>
+- Use your favorite text editor (Visual studio code, Sublime Text or other). <br>
+- Create a file with the ".html" extension and save it <br>
+- Open the file you've created by double-clicking on the file icon, which by default will be your browser's icon. <br></p>
+<p>A web page is made up of two parts:</p>
+<ul>
+<li>The <code>&lt;head&gt;</code> header: general information about the page: its title, encoding (for handling special characters), etc.<br></li>
+</ul>
+<p>This information is not displayed on the page ➔ information intended for the computer<br></p>
+<ul>
+<li>The body <code>&lt;body&gt;</code>: this is where the main part of the page is located; anything written here will be displayed on the screen.<br></li>
+</ul>
+<p><img alt="HTMLExample" src="../HTMLExample.png" style="width:700px;height:400px;" /> <br></p>
+<p>To execute the html page, you need to run the file: </p>
+<p><img alt="RunHtml" src="../RunHtml.png" style="width:600px;height:200px;" /> <br></p>
+<p><strong><div style="color: Royalblue;"> Html: Basics </div></strong></p>
+<ul>
+<li>Any open tag must be closed: <code>&lt;tag&gt; ... &lt;/tag&gt;</code>
+    • Example: <code>&lt;html&gt; ... &lt;/html&gt;</code></li>
+<li>Empty tags can be self-closing:
+    • Example : <code>&lt;br/&gt;</code></li>
+<li>Nesting possible but no overlap: <br>
+    • Example : <del><code>&lt;tag 1&gt;&lt;tag 2&gt;&lt;/tag 1&gt;&lt;/tag 2&gt;</code></del>➔ <code>&lt;tag 1&gt; &lt;tag 2&gt; &lt;/tag 2&gt; &lt;/tag 1&gt;</code> <br></li>
+<li>DOCTYPE is case-sensitive <br></li>
+<li>Attributes always have a value, and the value is always enclosed in single or double quotation marks. <br></li>
+<li>Attributes are separated from their value by "=". <br></li>
+<li>Attributes are separated from each other by at least one blank character (space, line feed, tab). <br></li>
+</ul>
+<div style="color: Red;">Note: In HTML 5, attributes are not case-sensitive, but this is not the case in XML dialects: attributes must always be written in lower case.</div>
+
+<p><strong><div style="color: Royalblue;"> Examples of tags </div></strong>
+ - The paragraphs: <code>&lt;p&gt; paragraph &lt;/p&gt;</code> <br>
+ - Go to line: <code>&lt;br&gt;</code> <br>
+ - Titles: <br>
+   &nbsp;&nbsp;• <code>&lt;h1&gt;text&lt;/h1&gt;</code> : means "very, very important <br>
+   &nbsp;&nbsp;• <code>&lt;h2&gt;text&lt;/h2&gt;</code> : means "very important <br>
+   &nbsp;&nbsp;• <code>&lt;h3&gt;text&lt;/h3&gt;</code> : means " important <br>
+   &nbsp;&nbsp;• <code>&lt;h4&gt;text&lt;/h4&gt;</code> : means " less important <br>
+   &nbsp;&nbsp;• <code>&lt;h5&gt;text&lt;/h5&gt;</code> : ... </br>
+   &nbsp;&nbsp;• <code>&lt;h6&gt;text&lt;/h6&gt;</code> : ...<br></p>
+<p><img alt="codehtmltitle" src="../codehtmltitle.png" style="width:600px;height:320px;" /> <br></p>
+<p>to see more html elements visit this link:<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">more html elements</a> </p>
+<p><strong><div style="color: Royalblue;"> Html: attributes </div></strong></p>
+<ul>
+<li>Attributes contain additional information about the element, but do not appear in the actual content. <br></li>
+<li>The class attribute gives the element an identifying name that will be used for it <br></li>
+<li>Several elements can belong to the same class.<br></li>
+</ul>
+<p><img alt="exampleAttribut" src="../exampleAttribut.png" style="width:300px;height:100px;" /> <br></p>
+<p><strong><div style="color: Royalblue;">Html: images </div></strong></p>
+<p><img alt="imageExample" src="../imageExample.png" style="width:600px;height:150px;" /> <br></p>
+<p>There are several attributes that can be defined: <br>
+&nbsp;&nbsp;  - src source image [URI or file name] alt <br>
+&nbsp;&nbsp;  - alt in this attribute, you specify a descriptive text for users who can't see the image (e.g. something went wrong and the image isn't displayed). <br>
+&nbsp;&nbsp;  - height in pixels <br>
+&nbsp;&nbsp;  - width in pixels <br>
+&nbsp;&nbsp;  - align to the left, right, top, middle or bottom <br></p>
+<p><strong><div style="color: Royalblue;">Html: Lists and links</div></strong>
+Lists: <br>
+&nbsp;&nbsp;  - Unordered lists <code>&lt;ul&gt; + &lt;li&gt;</code> <br>
+&nbsp;&nbsp;  - Ordered lists <code>&lt;ol&gt; + &lt;li&gt;</code><br></p>
+<p><img alt="example_lists" src="../example_lists.png" style="width:600px;height:350px;" /> <br></p>
+<p>Links: <br></p>
+<p><img alt="ExampleLink" src="../ExampleLink.png" style="width:500px;height:200px;" /> <br></p>
+<p><strong><div style="color: Royalblue;">Html: Tables</div></strong></p>
+<p><img alt="Table_Example" src="../Table_Example.png" style="width:570px;height:400px;" /> <br></p>
+<p><strong><div style="color: Royalblue;">Html: Header and footer tags</div></strong></p>
+<ul>
+<li>
+<p><code>&lt;header&gt;</code>: represents introductive content, generally a group of introductive or navigator content. It may contain title elements, but also other elements such as a logo, a search form, the author's name, etc. <br>
+<img alt="header example" src="../header%20example.png" style="width:400px;height:120px;" /> </p>
+</li>
+<li>
+<p><code>&lt;footer&gt;</code>: represents the footer of the nearest section or section root. An element usually contains information about the section's author, copyright data or links to other related documents.<br>
+<img alt="footer-example" src="../footer-example.png" style="width:200px;height:80px;" /> </p>
+</li>
+</ul>
+<p><strong><div style="color: Royalblue;">Html: « article » , « section », « nav » and « div » tags</div></strong></p>
+<ul>
+<li><code>&lt;article&gt;</code>: represents an autonomous composition in a document, page, application or site, intended for independent distribution or reuse.<br>
+ Rq: A given document may contain several articles. <br></li>
+<li><code>&lt;section&gt;</code>: represents a generic section of a document. Rq: a section generally begins with a title <br></li>
+<li><code>&lt;nav&gt;</code>: represents a section of a page with links to other pages or fragments of that page. <br></li>
+<li><code>&lt;div&gt;</code>:(or division) is the generic container for stream content. As a "pure" container, the element represents nothing in itself. Instead, it's used to group content together so that it can be easily styled using the class or id attributes, to mark a section of a document as being written in a different language (using the lang attribute), and so on. Rq: This tag will be interesting to study when you discover CSS.<br>
+<img alt="example_Article_nav_section" src="../example_Article_nav_section.png" style="width:500px;height:450px;" /> </li>
+</ul>
+<p><strong><div style="color: Royalblue;">Html: Multimedia tags </div></strong></p>
+<ul>
+<li>
+<p><code>&lt;video&gt;</code> : integrates a video player directly into the page, with Play and Pause buttons and a progress bar, volume control...<br>
+<img alt="video" src="../video.png" style="width:200px;height:100px;" /> </p>
+</li>
+<li>
+<p><code>&lt;audio&gt;</code>: same as the video tag, but for audio. Each browser uses its own design to style its player. But it's also possible to create your own design, if you want a uniform look.<br>
+<img alt="audio" src="../audio.png" style="width:200px;height:100px;" /> </p>
+</li>
+<li>
+<p><code>&lt;canvas&gt;</code>:the most exciting tag of all!!! It's a form of surface on which shapes can be traced and animated. It offers revolutionary possibilities for video game development. Coupled with WebGL for 3D graphics rendering, impressive results can be achieved within the browser itself.<br>
+<img alt="canvas" src="../canvas.png" style="width:200px;height:100px;" /> </p>
+</li>
+</ul>
+<p><strong><div style="color: Royalblue;">Html: Forms </div></strong></p>
+<ul>
+<li><code>&lt;form&gt;</code>: represents a form, i.e. a section of a document containing interactive controls enabling a user to provide information.<br></li>
+<li><code>&lt;input&gt;</code>: used to create an interactive control in a web form that allows the user to enter data. The element's input options and behavior are highly dependent on the value specified in its type attribute and its other attributes.<br>
+<img alt="form" src="../form.png" style="width:500px;height:300px;" /> <br>
+To see more of the tags used in forms, please visit: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">tags for forms</a></li>
+</ul>
+<h2 id="css-cascading-style-sheet"><div style="color: Royalblue;"> CSS: Cascading Style Sheet </div></h2>
+<p><strong><div style="color: Royalblue;"> CSS: Presentation <img alt="css" src="../css.png" style="width:200px;height:200px;" /> <br></div></strong></p>
+<ul>
+<li>Introduced in 1996<br></li>
+<li>CSS 1 → CSS 2.0 → CSS 2.1 → CSS 3 <br></li>
+<li>A language that complements HTML <br></li>
+<li>A langage that manages the layout of your site <br></li>
+<li>A langage that allows you to choose colors, selects fonts, defines text size, borders, background, etc. <br></li>
+<li>A langage that Allows you to lay out your site; menu layout, width, header position ...</li>
+</ul>
+<p><img alt="css_introduction" src="../css_introduction.png" style="width:600px;height:300px;" /></p>
+<p><strong><div style="color: Royalblue;"> CSS: Example </div></strong>
+<img alt="css_example" src="../css_example.png" style="width:600px;height:300px;" /></p>
+<p><strong><div style="color: Royalblue;"> CSS: Syntax </div></strong>
+<img alt="css_syntax" src="../css_syntax.png" style="width:600px;height:300px;" /></p>
+<ul>
+<li>Selector: the element(s) to be styled <br></li>
+<li>Declaration: a single rule specifying the properties of the element you want to style</li>
+<li>Properties: the ways in which you can style a given html element</li>
+<li>Property value; choose one of the many possible appearances for a given property</li>
+</ul>
+<p><img alt="css_syntax2" src="../css_syntax2.png" style="width:400px;height:140px;" /></p>
+<ul>
+<li>Each rule element must be surrounded by braces { }.</li>
+<li>In each declaration, use a colon ":" to separate properties from their values.</li>
+<li>Use a semicolon ";" to separate each declaration from the next.</li>
+</ul>
+<p>You can also select multiple elements and apply a single set of rules to each of them. Separate multiple selectors with commas. For example: <br>
+<img alt="css_example2" src="../css_example2.png" style="width:300px;height:100px;" /></p>
+<p><strong><div style="color: Royalblue;"> Some CSS properties </div></strong>
+<img alt="css_properties" src="../css_properties.png" style="width:600px;height:300px;" /></p>
+<h3 id="css-3"><div style="color: Royalblue;"> CSS 3 </div></h3>
+<ul>
+<li>All new features since CSS 2.1</li>
+<li>Enriches the style sheets:<br>
+            - New effects,<br>
+            - New selectors,<br>
+            - New ways to specify colors,<br>
+            - Detection of the user's device,<br></li>
+<li>Calculations in a style sheet...</li>
+<li>Rounded borders</li>
+<li>Vendor prefixes</li>
+<li>Visual effects</li>
+<li><a href="https://developer.mozilla.org/en/docs/Web/CSS/Reference">Selectors</a></li>
+</ul>
+<p><strong><div style="color: Royalblue;"> CSS : selector </div></strong></p>
+<p>A type selector targets an HTML element (a tag) in your document:<br></p>
+<ul>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors">Type selector</a> : you just have to specify the name of the html tag</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#le_s%C3%A9lecteur_universel">Universal selector ( * )</a>: allows to select all the document</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#s%C3%A9lecteurs_de_classe">Class selector</a> : start with a point (.)</p>
+<ul>
+<li>
+<p>Select any element to which this class is applied<br></p>
+</li>
+<li>
+<p>Select elements of a given type<br></p>
+</li>
+<li>
+<p>Select an element belonging to several classes<br></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#s%C3%A9lecteurs_de_classe">ID selector</a>: start with (#) used in the same way as a class selector but an ID cannot have a duplicate in the same document</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors">Attribute selector</a>: matches elements based on the presence or value of a given attribute.</p>
+</li>
+</ul>
+<p><strong><div style="color: Royalblue;"> CSS : Cascade, inheritance and specificity </div></strong></p>
+<p><strong>Objectives</strong>: Control how CSS is applied to HTML and how conflicts are resolved</p>
+<p><strong>Why</strong>: A CSS that does not apply as wanted to an element!</p>
+<p>=&gt; Creation of several rules to apply on the same element</p>
+<p><strong>Solution</strong> : Creation of several rules to be applied on the same element
+voici comment faire une structure html. </p>
+<p><strong><div style="color: Royalblue;"> Cascade </div></strong></p>
+<p>Order of appearance of the rules in the CSS </p>
+<p>=&gt; 2 rules with the same specificity: the last one will be applied</p>
+<p><strong>Example: Color will have the final value Blue</strong></p>
+<p><img alt="cascading_example" src="../cascading_example.png" style="width:550px;height:350px;" /></p>
+<p><strong><div style="color: Royalblue;"> Specificity </div></strong></p>
+<p>Specificity measures how precise the selection is:</p>
+<ul>
+<li>
+<p><strong>Low specificity selector</strong>: targets all elements of a given type: low rating</p>
+</li>
+<li>
+<p><strong>More specific selector</strong>: only targets elements with the class attribute of the specified value: high rating</p>
+</li>
+</ul>
+<p><img alt="specify_example" src="../specify_example.png" style="width:500px;height:300px;" /></p>
+<p><strong><div style="color: Royalblue;">Inheritance</div></strong></p>
+<p>Some values for a CSS property are passed from parent elements to their children, others
+are not.</p>
+<p><img alt="css_cascading3" src="../css_cascading3.png" style="width:500px;height:350px;" /></p>
+<p><strong><div style="color: Red;">Warning: Properties such as width, margins, fill, and borders are not inherited.</div></strong></p>
+<p><strong><div style="color: Royalblue;">Inheritance: properties</div></strong></p>
+<div style="color: black;">
+    - Inherit : inheritance enabled<br>
+    - Initial : default value<br>
+    - unset : reset the property to its natural value<br></div>
+
+<p><img alt="heritage" src="../heritage.png" style="width:600px;height:350px;" /></p>
+<h2 id="responsive-design"><div style="color: Royalblue;">Responsive Design</div></h2>
+<ul>
+<li>A responsive interface adapts to the size of the screen, while remaining comfortable to use.<br>
+=&gt; Need to design websites which can be viewed from any terminal, desktop PC or cell phone, with a comparable comfort of use.
+<img alt="responsiveDesign" src="../responsiveDesign.png" style="width:400px;height:300px;" /></li>
+</ul>
+<p><strong><div style="color: Royalblue;">Responsive: the key steps</div></strong></p>
+<ul>
+<li>Responsive web design : <br>
+  1st step : <strong>device</strong> : take the ring road into account =&gt; viewport.<br>
+  2d step : mobile first : css for mobile first =&gt; min-width, max-width, min-height, max-height<br>
+  3rd step : media query : define breakpoint <br>
+<img alt="responsivesteps" src="../responsivesteps.png" style="width:600px;height:350px;" /></li>
+</ul>
+<p><strong><div style="color: Royalblue;">Step 1 : Viewport</div></strong></p>
+<p>The viewport declaration must be placed in ALL HTML pages of the website, in
+the head section.
+<img alt="responsive_step1" src="../responsive_step1.png" style="width:500px;height:200px;" /></p>
+<p><strong><div style="color: Royalblue;">Step 2: Define dimensions and set limits</div></strong></p>
+<ul>
+<li>Define dimensions in relative units: For margins, element dimensions, etc. Relative
+length units specify a length relative to another length property. <br>The most commonly
+used unit is the percentage. It is relative to the parent element.<br>
+&rarr; So all dimensions are proportional to those of the screen</li>
+<li>Set limits: 4 properties allow to set min-width, max-width, min-height and max-height
+limits <br>
+&rarr; Unlike the other dimensions, these values will be defined in absolute units
+(e.g. pixels)</li>
+</ul>
+<h2 id="media-query"><div style="color: Royalblue;">Media query</div></h2>
+<p>The <strong>media queries</strong> allow, while remaining on a screentype terminal, to filter styles according to the size of this screen.<br>
+<strong>@media</strong> applies CSS rules to a specific device. By using this attribute, it is therefore possible to define specific layouts for each device: screen, printer, smartphone, etc.</p>
+<p><img alt="@media" src="../%40media.png" style="width:250px;height:350px;" /></p>
+<h2 id="flexbox"><div style="color: Royalblue;">Flexbox</div></h2>
+<ul>
+<li>
+<p><strong>Flexbox</strong>, or flexible boxes, is a new property introduced in CSS3.
+They make adaptive design much easier.
+<img alt="flexbox" src="../flexbox.png" style="width:600px;height:200px;" /></p>
+</li>
+<li>
+<p>With <strong>flex-wrap</strong>, if the elements are too big to fit on one line, they will move to another line</p>
+</li>
+</ul>
+<p><img alt="flexwrap" src="../flexwrap.png" style="width:600px;height:200px;" /></p>
+<ul>
+<li><strong>Flex-flow</strong> : shorthand property that specifies the direction of a flex container, as
+well as its wrapping behavior.</li>
+</ul>
+<p><img alt="flexflow" src="../flexflow.png" style="width:600px;height:200px;" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;html&gt;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;head&gt;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&lt;title&gt;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>&lt;/title&gt;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&lt;/head&gt;
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>&lt;body&gt;
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>&lt;/body&gt;
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>&lt;/html&gt;
+</code></pre></div>
+<h3 id="code-with-a-specific-langage">Code with a specific langage</h3>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">def</span> <span class="nf">whaterver</span><span class="p">()</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a> <span class="k">return</span> <span class="mi">0</span>
+</code></pre></div></td></tr></table></div>
+<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f604.svg" title=":smile:" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/zouhour-guiras"  target="_blank" rel="noopener">Zouhour Guiras</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+    
+  </body>
+</html>
