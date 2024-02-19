@@ -13,6 +13,8 @@ theme:
    - content.code.annotation
    - content.code.copy
   language: en
+  extra_css:
+   - custom.css
   extra:
    logo:
     href: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNCyK1aPBvnM7i34FkQdl4a9iY3bHnk_r-XQpIBjQxdw&s'

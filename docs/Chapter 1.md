@@ -194,29 +194,3 @@ The most used languages are PHP, Ruby, Python, SQL <br>
 
 
 
-
-some `code` goes here
-### un code à tester
-
-voici comment faire une structure html
-
-
-```
-<html>
-<head>
-<title>
-</title>
-</head>
-<body>
-</body>
-</html>
-```
-
-### Code with a specific langage
-
-```py linenums="1" 
-import tensorflow as tf
-def whaterver()
- return 0
-```
-:smile:
