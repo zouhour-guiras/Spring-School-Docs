@@ -487,20 +487,59 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Flexbox">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-with-a-specific-langage" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-basics" class="md-nav__link">
     <span class="md-ellipsis">
-      Code with a specific langage
+       Javascript Basics 
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-synchronous-vs-asynchronous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Javascript: Synchronous Vs Asynchronous 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objects-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objects in JavaScript 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-iterable-object-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      The iterable object : Array
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-json-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      The JSON format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical work
+    </span>
+  </a>
   
 </li>
       
@@ -825,23 +864,733 @@ They make adaptive design much easier.
 well as its wrapping behavior.</li>
 </ul>
 <p><img alt="flexflow" src="../flexflow.png" style="width:600px;height:200px;" /></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;html&gt;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;head&gt;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&lt;title&gt;
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>&lt;/title&gt;
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&lt;/head&gt;
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>&lt;body&gt;
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>&lt;/body&gt;
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>&lt;/html&gt;
-</code></pre></div>
-<h3 id="code-with-a-specific-langage">Code with a specific langage</h3>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">def</span> <span class="nf">whaterver</span><span class="p">()</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a> <span class="k">return</span> <span class="mi">0</span>
+<h2 id="javascript-basics"><div style="color: Royalblue;"> Javascript Basics </div></h2>
+<div style="color: Orange;"> - Html : creating content </div>
+<div style="color: Orange;"> - Css : organizing content </div>
+<div style="color: Orange;"> - Javascript : to interact with the user </div>
+
+<p><strong>Javascript</strong> : what is it? <br></p>
+<ul>
+<li>
+<p>Abbreviated as "JS", it is a lightweight scripting language, mainly known as the scripting language for web pages.</p>
+</li>
+<li>
+<p>It is a dynamic language;</p>
+</li>
+<li>
+<p>The code is mainly interpreted by the client browser (interpretation depending on the browser type and version).</p>
+</li>
+<li>
+<p>Event-driven language (association of actions to events triggered by the user (mouseover, click, keyboard input, etc.).</p>
+</li>
+<li>
+<p>Also used in many non-browser environments such as Node.js, Apache CouchDB and
+even Adobe Acrobat.</p>
+</li>
+</ul>
+<p><strong><div style="color: Royalblue;"> Javascript at the beginning! </div></strong></p>
+<p>The term JavaScript has remained in the common vocabulary, but in fact it is ECMAScript</p>
+<ul>
+<li>
+<p>Invented in 1995 by Brendan Eich for Netscape and its browser,</p>
+</li>
+<li>
+<p>ECMAScript specification validated by Ecma International in June 1997 ECMA 262 standard</p>
+</li>
+<li>
+<p>ECMAScript standardized in its version 5 in December 2009</p>
+</li>
+<li>
+<p>ES 2015 was released in June 2015. This version was successively called ECMAScript Harmony, ECMAScript 6 and ECMAScript 2015</p>
+</li>
+</ul>
+<p><strong><div style="color: Royalblue;"> Advantages and disadvantages </div></strong></p>
+<p><img alt="Av_dis" src="../Av_dis.png" style="width:700px;height:350px;" /></p>
+<p><strong><div style="color: Royalblue;"> Where to put the Javascript? </div></strong></p>
+<p><strong>3 options :</strong></br></p>
+<ol>
+<li>In the opening tag of an HTML element:<br>
+<img alt="option1_javascript" src="../option1_javascript.png" style="width:400px;height:150px;" /></li>
+<li>In a script element, within an HTML page: <br>
+<img alt="option2_javascript" src="../option2_javascript.png" style="width:600px;height:300px;" /></li>
+<li>In a separate file containing only JavaScript and with the extension .js:<br>
+<img alt="option3_javascript" src="../option3_javascript.png" style="width:600px;height:300px;" />
+<strong><div style="color: Royalblue;"> Javascript : syntax </div></strong></li>
+<li>JavaScript is case sensitive.<br></li>
+<li>In JavaScript, statements are separated by semicolons.<br></li>
+<li>If there are multiple statements on a single line, then they must be
+separated by a semicolon.<br></li>
+<li>Comments:<br>
+<img alt="comment_javascript" src="../comment_javascript.png" style="width:300px;height:120px;" />
+<strong><div style="color: Royalblue;"> Javascript : Declaration and initialization of variables</div></strong></li>
+</ol>
+<p>To declare a variable in JavaScript, two options:</br>
+- The <strong>« var »</strong> keyword : declare a variable and possibly initialize its value </br>
+- The <strong>« let »</strong> keyword : allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.</br>
+one of these keywords must be followed by the name we want to give to our variable.</br>
+It is also possible to define a constant using the keyword « const »<br>
+<img alt="var_javascript" src="../var_javascript.png" style="width:300px;height:80px;" /></p>
+<p><strong><div style="color: Red;">Notes :</div></strong>
+1. A variable declared using the var or let statement without a defined initial value will be worth <strong>undefined</strong> </br>
+2. Variable names are called <strong>identifiers</strong></br>
+3. A JavaScript identifier must begin with a letter, an underscore <code>(_)</code>, or a dollar sign <code>($)</code></br>
+<strong><div style="color: Royalblue;">let vs var</div></strong>
+<img alt="letVSvar" src="../letVSvar.png" style="width:500px;height:300px;" /></p>
+<p><strong><div style="color: Royalblue;">Javascript: operators, concatenation</div></strong></p>
+<ul>
+<li>
+<p>Operators: <br>
+<code>+, -, /, *, %, == (values), === (values and types), !=(value), !==(values or types), &lt;, &gt;,</code> etc <br>
+<img alt="operators" src="../operators.png" style="width:200px;height:100px;" /></p>
+</li>
+<li>
+<p>Concatenation: <br>
+<img alt="concatenation" src="../concatenation.png" style="width:300px;height:100px;" /></p>
+</li>
+<li>
+<p>Display: <br>
+<img alt="display" src="../display.png" style="width:300px;height:100px;" /></p>
+</li>
+</ul>
+<p><strong><div style="color: Royalblue;">Javascript: Conditional structure</div></strong></p>
+<ul>
+<li>Simple conditional structures:</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="o">=</span><span class="mf">1</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">   </span><span class="k">if</span><span class="p">(</span><span class="nx">x</span><span class="o">&gt;</span><span class="mf">1</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">   </span><span class="p">{</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is greater than 1&#39;</span><span class="p">);</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">   </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is less than 1&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">   </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f604.svg" title=":smile:" /></p>
+- Multiple conditional structure: </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">var</span><span class="w"> </span><span class="o">=</span><span class="mf">1</span><span class="w"> </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">if</span><span class="p">(</span><span class="nx">x</span><span class="o">&gt;</span><span class="mf">1</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">   </span><span class="p">{</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is greater than 1&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">   </span><span class="p">}</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="nx">x</span><span class="o">==</span><span class="mf">1</span><span class="p">){</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is equal to 1&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">   </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is less than 1&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">   </span><span class="p">}</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="k">switch</span><span class="p">(</span><span class="nx">x</span><span class="p">){</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mf">0</span><span class="o">:</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is greater than 1&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mf">1</span><span class="o">:</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is equal to 1&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mf">2</span><span class="o">:</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;The value of x is less than 1&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;I dont know!&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<strong><div style="color: Royalblue;">Javascript: Loop structure</div></strong></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">//while loop</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">while</span><span class="p">(</span><span class="nx">x</span><span class="o">&lt;</span><span class="mf">10</span><span class="p">){</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="nx">x</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1">//do while loop</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="k">do</span><span class="p">{</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="nx">x</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="nx">x</span><span class="o">&lt;</span><span class="mf">10</span><span class="p">);</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="c1">//For loop</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="k">for</span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mf">10</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="p">{</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">    </span><span class="nx">x</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<strong><div style="color: Royalblue;">Javascript:function</div></strong></p>
+<ul>
+<li>You can create a function using the obvious keyword <strong>"function"</strong> <br></li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">random_integer</span><span class="p">(){</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mf">100</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">}</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Multiplication</span><span class="p">(</span><span class="nx">number1</span><span class="p">,</span><span class="nx">number2</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="p">{</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">numbre1</span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;*&#39;</span><span class="w"> </span><span class="o">+</span><span class="nx">numbre2</span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;=&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="nx">numbre1</span><span class="o">+</span><span class="nx">number2</span><span class="p">);</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+- A function can be anonymous(not have a corresponding name): <br></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">carré</span><span class="o">=</span><span class="kd">function</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="o">*</span><span class="nx">n</span><span class="p">;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">}</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="o">=</span><span class="nx">carré</span><span class="p">(</span><span class="mf">4</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><strong>Notes</strong>: The declaration of a function can be made after the call</li>
+</ul>
+<p><strong><div style="color: Royalblue;">Javascript:events</div></strong></p>
+<ul>
+<li>JavaScript = reactive language &rarr; like a sequence of events that occur in
+time</li>
+<li>User interaction is managed through events</li>
+<li>Event = action or event that occurs in the system and that the system
+informs you about in order to respond to</li>
+<li>Events are usually HTML attribute names, the content of these attributes will be JavaScript.</li>
+<li>In general, JavaScript makes it possible to link a JavaScript instruction with
+each event: either via the call to a basic JavaScript function, or via the call
+to one of our own procedures.</li>
+</ul>
+<p><strong><div style="color: Royalblue;">Javascript:event detection</div></strong></p>
+<p><img alt="events" src="../events.png" style="width:600px;height:250px;" /></p>
+<p><strong><div style="color: Royalblue;">Javascript : functions used with a user action</div></strong></p>
+<p>Some examples : <br>
+- alert : opens a window with a given message,
+- modifier window.location to go to another page,
+- document.write: writes a given text,
+- setTimeout et setInterval allow respectively to delay and to repeat an instruction;
+- focus : allows to activate an element of the page (like the box to be filled in a form),
+blur to deactivate it.</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1">//trigger immediate alert (alert)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">onclikc</span><span class="o">=</span><span class="s2">&quot;alert(&#39;Hi!&#39;)&quot;</span><span class="o">&gt;</span><span class="nx">click</span><span class="w"> </span><span class="nx">here</span><span class="o">!&lt;</span><span class="err">/button&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1">//alert triggered in half a second(setTimeout)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">onclick</span><span class="o">=</span><span class="s2">&quot;setTimeout(&#39;alert(\&#39;Surprise!\&#39;)&#39;,500)&quot;</span><span class="o">&gt;</span><span class="nx">click</span><span class="w"> </span><span class="nx">here</span><span class="o">!&lt;</span><span class="err">/button&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1">//repeat every 5 seconds (setInterval)</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="kd">var</span><span class="w"> </span><span class="nx">clock_id</span><span class="o">=</span><span class="nx">setInterval</span><span class="p">(</span><span class="s1">&#39;alert(\&#39;hi hi !\&#39;);&#39;</span><span class="p">,</span><span class="mf">5000</span><span class="p">);</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">clock_id</span><span class="p">);</span><span class="c1">//end of repeat</span>
+</code></pre></div></td></tr></table></div>
+<strong><div style="color: Royalblue;">DOM : Document Object Model</div></strong></p>
+<ul>
+<li>The DOM represents HTML as a structure of tree structure of tags.</li>
+</ul>
+<p><img alt="DOM" src="../DOM.png" style="width:500px;height:200px;" /></p>
+<ul>
+<li>DOM: structured representation of the document in the form of a tree.</li>
+<li>DOM: defines how the structure can be manipulated.</li>
+<li>JavaScript interacts with the page via the DOM structure accessible via a variable called "document".</li>
+<li>DOM: accessing one or more elements</li>
+<li>To access an element by its " id ", use " GetElementById ".</li>
+<li>If an HTML element has an "id", a variable is created for it.</li>
+</ul>
+<p><strong><div style="color: Royalblue;">DOM : Access to the element</div></strong></p>
+<p>To access a DOM element, you can use:<br>
+- By its <strong>id</strong> attribute<br>
+- By its <strong>class</strong> attribute<br>
+- By its tag<br>
+- By a <strong>CSS</strong> selector<br>
+- By its <strong>name</strong> attribute<br></p>
+<p><img alt="getElement" src="../getElement.png" style="width:500px;height:170px;" /></p>
+<h2 id="javascript-synchronous-vs-asynchronous"><div style="color: Royalblue;">Javascript: Synchronous Vs Asynchronous </div></h2>
+<p><img alt="Asynch" src="../Asynch.png" style="width:500px;height:170px;" /></p>
+<p><strong><div style="color: Royalblue;">Asynchronous in Javascript</div></strong></p>
+<ul>
+<li>In computer science, two operations are said to be synchronous when the second one waits for the first one to finish its work before starting (dependency)</br></li>
+<li>Two operations are said to be asynchronous in computer science when they are independent, i.e. when the second operation does not need to wait for the first to finish before starting.<br></li>
+<li>In JavaScript, each line of code is executed synchronously, but it is possible to request to execute code asynchronously i.e. actions can be executed independently of the main execution flow <br></li>
+<li>In JavaScript, asynchronous operations are put in queues that will execute after the main thread has finished its operations. They do not block the execution of the rest of the JavaScript code <br></li>
+<li>
+<p>Example of asynchronous functions setTimeout setInterval setImmediate <br></p>
+</li>
+<li>
+<p>The function setTimeout: this is the most common function when you want to execute
+asynchronous code without blocking the current execution thread. <br>
+&rarr; This function takes 2 parameters:</p>
+</li>
+<li>The function to be executed asynchronously (which will be added to the event loop queue) ;</li>
+<li>The time delay, in milliseconds, before executing this function.</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;I&#39;m here!&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">},</span><span class="mf">5000</span><span class="p">);</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Where are you?&quot;</span><span class="p">);</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="c1">//The message &quot;where are you?&quot;&quot; will display before &quot;I&#39;m here!&quot;,which will only be displayed after 5 seconds</span>
+</code></pre></div></td></tr></table></div>
+<strong><div style="color: Royalblue;">Callback function</div></strong></p>
+<ul>
+<li>A <strong>"callback"</strong> function is a function passed as an argument to an asynchronous function and which will be called at the end of the execution of the latter.</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">//function </span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">callback</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="p">{</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hi&#39;</span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">    </span><span class="nx">callback</span><span class="p">();</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="p">}</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1">//callback function</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="kd">function</span><span class="w"> </span><span class="nx">callMe</span><span class="p">(){</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;I am callback function&#39;</span><span class="p">);</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="p">}</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="c1">//passing function as an argument</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="nx">greet</span><span class="p">(</span><span class="s1">&#39;Efrei&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">callMe</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+&rarr; When we pass a function as a
+parameter, we just give its name,
+without the parentheses (the
+presence of parentheses causes a
+function call) <br></p>
+<div style="color: red;"> Rq: This can turn into a callback hell if you
+have several callbacks where each one
+requires the result of the previous
+operation</div>
+
+<p><strong><div style="color: Royalblue;">The Promise object</div></strong></p>
+<ul>
+<li>A promise is an object that is returned and to which callbacks are attached rather than passing callbacks to a function.<br></li>
+<li>The "Promise" object which represents the completion or failure of an asynchronous operation.<br>
+➢ A promise is an object that is returned and to which callbacks are attached, rather than passing callbacks to a function.<br>
+➢ A promise in JavaScript is an object that represents the state of an asynchronous operation<br>
+➢ An asynchronous operation can be in one of the following states : <br>
+      • Operation in progress (not completed)<br>
+      • Operation successfully completed (promise resolved)<br>
+      • Operation completed or more precisely stopped after a failure (promise rejected)<br></li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">promesse</span><span class="o">=</span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolde</span><span class="p">,</span><span class="nx">reject</span><span class="p">))=&gt;{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span><span class="c1">//asynchrone task to realise</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">    </span><span class="c1">//call resolve function if the promise is resolved</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">    </span><span class="c1">//or</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">    </span><span class="c1">//call reject function if the promise is rejected</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<strong><div style="color: Royalblue;">The Anonymous function and arrow function</div></strong></p>
+<ul>
+<li>An arrowed function allows to have a shorter syntax</li>
+<li>It is possible to define a function directly inside another function</li>
+</ul>
+<p><img alt="anonymous_function" src="../anonymous_function.png" style="width:600px;height:250px;" /></p>
+<p><strong><div style="color: Royalblue;">The The scope</div></strong></p>
+<ul>
+<li>Scope is often referred to when talking about global and local variables</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">mafonction</span><span class="p">(){</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">terme</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span><span class="p">;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;Hello everybody&#39;</span><span class="p">;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="p">}</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mafonction</span><span class="p">());</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">terme</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+- The variable myfunction of type function has a global scope to the script <br>
+- The term variable is defined in the secret function and is therefore not accessible outside the scope of the function<br>
+- Conversely, what is defined outside a function is accessible inside a function<br></p>
+<h2 id="objects-in-javascript"><div style="color: Royalblue;">Objects in JavaScript </div></h2>
+<ul>
+<li>
+<p>Objects in JavaScript :<br>
+  ➢ Javascript uses the "objects" paradigm <br>
+  ➢ A Javascript object is an entity in itself that has properties and a type <br>
+  ➢ The JavaScript environment provides native (predefined) objects (Date, String, Math, etc...), but it is possible to build new objects <br>
+  ➢ An object is defined with 3 elements :<br></p>
+<ul>
+<li>its constructor,<br></li>
+<li>its properties <br></li>
+<li>its methods (functions specific to the object) <br></li>
+</ul>
+</li>
+<li>
+<p>To see more about object creation, please visit this link : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object</a></p>
+</li>
+<li>
+<p>Example 1 : creation of an object called "Person" <br></p>
+</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span>
+<span class="normal"><a href="#__codelineno-10-19">19</a></span>
+<span class="normal"><a href="#__codelineno-10-20">20</a></span>
+<span class="normal"><a href="#__codelineno-10-21">21</a></span>
+<span class="normal"><a href="#__codelineno-10-22">22</a></span>
+<span class="normal"><a href="#__codelineno-10-23">23</a></span>
+<span class="normal"><a href="#__codelineno-10-24">24</a></span>
+<span class="normal"><a href="#__codelineno-10-25">25</a></span>
+<span class="normal"><a href="#__codelineno-10-26">26</a></span>
+<span class="normal"><a href="#__codelineno-10-27">27</a></span>
+<span class="normal"><a href="#__codelineno-10-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1">// Definition of the object person</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Zouhour&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">  </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Guiras&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">  </span><span class="c1">// method to display person information</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">  </span><span class="nx">DisplayDetails</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;name:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Surname:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">surname</span><span class="p">);</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Age:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13"></a>
+<a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">  </span><span class="c1">// Method to change the name</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">  </span><span class="nx">changeName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">newName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">newName</span><span class="p">;</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="p">};</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="c1">// Display initial person information</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Display initial person information&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">DisplayDetails</span><span class="p">();</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="c1">// Change person name</span>
+<a id="__codelineno-10-24" name="__codelineno-10-24"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">changeName</span><span class="p">(</span><span class="s2">&quot;Jane&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25"></a>
+<a id="__codelineno-10-26" name="__codelineno-10-26"></a><span class="c1">// Display new person information</span>
+<a id="__codelineno-10-27" name="__codelineno-10-27"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\n updated person information&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28"></a><span class="nx">Personne</span><span class="p">.</span><span class="nx">DisplayDetails</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Example 2: Manage a date object <br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span>
+<span class="normal"><a href="#__codelineno-11-16">16</a></span>
+<span class="normal"><a href="#__codelineno-11-17">17</a></span>
+<span class="normal"><a href="#__codelineno-11-18">18</a></span>
+<span class="normal"><a href="#__codelineno-11-19">19</a></span>
+<span class="normal"><a href="#__codelineno-11-20">20</a></span>
+<span class="normal"><a href="#__codelineno-11-21">21</a></span>
+<span class="normal"><a href="#__codelineno-11-22">22</a></span>
+<span class="normal"><a href="#__codelineno-11-23">23</a></span>
+<span class="normal"><a href="#__codelineno-11-24">24</a></span>
+<span class="normal"><a href="#__codelineno-11-25">25</a></span>
+<span class="normal"><a href="#__codelineno-11-26">26</a></span>
+<span class="normal"><a href="#__codelineno-11-27">27</a></span>
+<span class="normal"><a href="#__codelineno-11-28">28</a></span>
+<span class="normal"><a href="#__codelineno-11-29">29</a></span>
+<span class="normal"><a href="#__codelineno-11-30">30</a></span>
+<span class="normal"><a href="#__codelineno-11-31">31</a></span>
+<span class="normal"><a href="#__codelineno-11-32">32</a></span>
+<span class="normal"><a href="#__codelineno-11-33">33</a></span>
+<span class="normal"><a href="#__codelineno-11-34">34</a></span>
+<span class="normal"><a href="#__codelineno-11-35">35</a></span>
+<span class="normal"><a href="#__codelineno-11-36">36</a></span>
+<span class="normal"><a href="#__codelineno-11-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1">// Create an object date which presents the current date. </span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">currentDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="c1">// display current date</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current Date :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">);</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="c1">// get the year</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="kd">let</span><span class="w"> </span><span class="nx">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;current year :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">year</span><span class="p">);</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="c1">// get month (0-11)</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="kd">let</span><span class="w"> </span><span class="nx">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">();</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current month:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">month</span><span class="p">);</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14"></a>
+<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="c1">// get day of the month (1-31)</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="kd">let</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current day of the month :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="p">);</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18"></a>
+<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="c1">// get day of the week (0-6)</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="kd">let</span><span class="w"> </span><span class="nx">dayweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">day</span><span class="p">.</span><span class="nx">getDay</span><span class="p">();</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current day of the week :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="nx">week</span><span class="p">);</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22"></a>
+<a id="__codelineno-11-23" name="__codelineno-11-23"></a><span class="c1">// get hour</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="kd">let</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getHours</span><span class="p">();</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current hour :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hour</span><span class="p">);</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26"></a>
+<a id="__codelineno-11-27" name="__codelineno-11-27"></a><span class="c1">// get minutes</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28"></a><span class="kd">let</span><span class="w"> </span><span class="nx">minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">();</span>
+<a id="__codelineno-11-29" name="__codelineno-11-29"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current minutes:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">minutes</span><span class="p">);</span>
+<a id="__codelineno-11-30" name="__codelineno-11-30"></a>
+<a id="__codelineno-11-31" name="__codelineno-11-31"></a><span class="c1">// get seconds</span>
+<a id="__codelineno-11-32" name="__codelineno-11-32"></a><span class="kd">let</span><span class="w"> </span><span class="nx">seconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">();</span>
+<a id="__codelineno-11-33" name="__codelineno-11-33"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current Seconds :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">seconds</span><span class="p">);</span>
+<a id="__codelineno-11-34" name="__codelineno-11-34"></a>
+<a id="__codelineno-11-35" name="__codelineno-11-35"></a><span class="c1">// get milliseconds</span>
+<a id="__codelineno-11-36" name="__codelineno-11-36"></a><span class="kd">let</span><span class="w"> </span><span class="nx">milliseconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMilliseconds</span><span class="p">();</span>
+<a id="__codelineno-11-37" name="__codelineno-11-37"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current millisecondes :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">milliseconds</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="the-iterable-object-array"><div style="color: Royalblue;">The iterable object : Array</div></h2>
+<ul>
+<li>Object used to create arrays</li>
+<li>Array objects have methods to browse and modify their contents</li>
+<li>To see the list of methods that can be used to manipulate arrays, please visit this link : <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array</a> <br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span>
+<span class="normal"><a href="#__codelineno-12-16">16</a></span>
+<span class="normal"><a href="#__codelineno-12-17">17</a></span>
+<span class="normal"><a href="#__codelineno-12-18">18</a></span>
+<span class="normal"><a href="#__codelineno-12-19">19</a></span>
+<span class="normal"><a href="#__codelineno-12-20">20</a></span>
+<span class="normal"><a href="#__codelineno-12-21">21</a></span>
+<span class="normal"><a href="#__codelineno-12-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">students</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Jean&#39;</span><span class="p">,</span><span class="s1">&#39;Paul&#39;</span><span class="p">,</span><span class="s1">&#39;David&#39;</span><span class="p">];</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="c1">// it will display 3</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1">// The access to an element of the array is done via its index </span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">first</span><span class="o">=</span><span class="nx">students</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="c1">//Jean</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="kd">let</span><span class="w"> </span><span class="nx">second</span><span class="o">=</span><span class="nx">students</span><span class="p">[</span><span class="mf">2</span><span class="p">];</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="c1">//David</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="c1">//Loop on the content of the table</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="nx">students</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">array</span><span class="p">)</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="p">{</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="nx">index</span><span class="p">);</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a>
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="p">});</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="c1">// Jean 0</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="c1">// Paul 1</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="c1">// David 2</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18"></a>
+<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="c1">//Add to end, remove from start/end an element </span>
+<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="kd">let</span><span class="w"> </span><span class="ow">new</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;Zouhour&#39;</span><span class="p">);</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="kd">let</span><span class="w"> </span><span class="nx">last</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22"></a><span class="kd">let</span><span class="w"> </span><span class="nx">first</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="the-json-format"><div style="color: Royalblue;">The JSON format</div></h2>
+<ul>
+<li>JSON : JavaScript Object Notation</li>
+<li>Standard format used for representing structured data in a way similar to JavaScript objects</li>
+<li>Developed by Douglas Crockford</li>
+<li>Can be used in many other programming languages</li>
+<li>JSON: string that is converted into a native Javascript object (parsing)</li>
+<li>JS provides a global JSON object with methods to perform the conversion</li>
+<li>A JSON object can be stored in a file with the extension .json and the MIME Type application/
+json</li>
+<li>
+<p>Allows to prioritize data</p>
+</li>
+<li>
+<p>Example: </p>
+</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span>
+<span class="normal"><a href="#__codelineno-13-14">14</a></span>
+<span class="normal"><a href="#__codelineno-13-15">15</a></span>
+<span class="normal"><a href="#__codelineno-13-16">16</a></span>
+<span class="normal"><a href="#__codelineno-13-17">17</a></span>
+<span class="normal"><a href="#__codelineno-13-18">18</a></span>
+<span class="normal"><a href="#__codelineno-13-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">  </span><span class="s2">&quot;students&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dupont&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Jean&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Martin&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Marie&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">22</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dubois&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pierre&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">21</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<strong><div style="color: Royalblue;">The JSON object</div></strong></p>
+<ul>
+<li>Objet global javascript</li>
+<li>Contains methods for :<ul>
+<li>interpreting JSON</li>
+<li>converting values to JSON</li>
+</ul>
+</li>
+</ul>
+<p>&rarr; <strong>Parse</strong>: parse the string as JSON<br>
+  • If needed, transform the produced value and its properties and return the value <br>
+  • Syntaxe : <code>JSON.parse(texte[, revivificateur])</code> <br>
+&rarr; <strong>stringify</strong>: Returns a JSON string corresponding to the specified value <br>
+  • Includes some properties <br>
+  • Replaces property values in a way defined by the user. <br>
+  • Syntaxe : <code>JSON.stringify(valeur[, remplacement[, expace]])</code><br></p>
+<ul>
+<li>Example: Suppose you have a JSON file called students.json containing the data shown above: <br></li>
+<li>To convert the content of the JSON file into a JavaScript object, use the method <code>JSON.parse()</code><br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">  </span><span class="c1">// Read the content of the JSON file</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">jsonData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">  </span><span class="c1">// Convert the content of json file to an object js</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">dataObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonData</span><span class="p">);</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">  </span><span class="c1">// display the different students</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dataObj</span><span class="p">);</span><span class="w"> </span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>To convert a JavaScript object into a JSON string, use the method : <code>JSON.stringify()</code><br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-15-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-15-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-15-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-15-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-15-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-15-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-15-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-15-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-15-10">10</a></span>
+<span class="normal"><a href="#__codelineno-15-11">11</a></span>
+<span class="normal"><a href="#__codelineno-15-12">12</a></span>
+<span class="normal"><a href="#__codelineno-15-13">13</a></span>
+<span class="normal"><a href="#__codelineno-15-14">14</a></span>
+<span class="normal"><a href="#__codelineno-15-15">15</a></span>
+<span class="normal"><a href="#__codelineno-15-16">16</a></span>
+<span class="normal"><a href="#__codelineno-15-17">17</a></span>
+<span class="normal"><a href="#__codelineno-15-18">18</a></span>
+<span class="normal"><a href="#__codelineno-15-19">19</a></span>
+<span class="normal"><a href="#__codelineno-15-20">20</a></span>
+<span class="normal"><a href="#__codelineno-15-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="c1">// Objet JavaScript represents students</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">  </span><span class="p">{</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">    </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">23</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10"></a><span class="w">  </span><span class="p">{</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Johnson&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12"></a><span class="w">    </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Emily&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">21</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15"></a><span class="p">];</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16"></a>
+<a id="__codelineno-15-17" name="__codelineno-15-17"></a><span class="c1">// Convertir the objet JavaScript to a string JSON</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18"></a><span class="kd">let</span><span class="w"> </span><span class="nx">jsonData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="w"> </span><span class="nx">students</span><span class="o">:</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19"></a>
+<a id="__codelineno-15-20" name="__codelineno-15-20"></a><span class="c1">// write the string json into a file</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21"></a><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s1">&#39;new_students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">jsonData</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="practical-work"><div style="color: Royalblue;">Practical work</div></h2>
 
 
 
