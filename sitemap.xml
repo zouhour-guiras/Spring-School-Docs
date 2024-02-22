@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zouhour-guiras.github.io/Spring-School-Docs/Acceuil/</loc>
-         <lastmod>2024-02-20</lastmod>
+         <lastmod>2024-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zouhour-guiras.github.io/Spring-School-Docs/Chapter%201/</loc>
-         <lastmod>2024-02-20</lastmod>
+         <lastmod>2024-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zouhour-guiras.github.io/Spring-School-Docs/Chapter%202/</loc>
-         <lastmod>2024-02-20</lastmod>
+         <lastmod>2024-02-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zouhour-guiras.github.io/Spring-School-Docs/Chapter%203/</loc>
+         <lastmod>2024-02-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

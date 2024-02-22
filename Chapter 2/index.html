@@ -14,6 +14,8 @@
         <link rel="prev" href="../Chapter%201/">
       
       
+        <link rel="next" href="../Chapter%203/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
@@ -245,6 +247,23 @@
     
   
   Chapter 2 : Master the basic technologies of client-side Web development
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%203/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapitre 3: Discover a modern web framework: Vue.Js
 
       </a>
     </li>
@@ -535,6 +554,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#practical-work" class="md-nav__link">
     <span class="md-ellipsis">
       Practical work
@@ -547,6 +575,26 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapitre 3: Discover a modern web framework: Vue.Js
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -783,12 +831,12 @@ To see more of the tags used in forms, please visit: <a href="https://developer.
 <p><strong><div style="color: Royalblue;"> CSS : Cascade, inheritance and specificity </div></strong></p>
 <p><strong>Objectives</strong>: Control how CSS is applied to HTML and how conflicts are resolved</p>
 <p><strong>Why</strong>: A CSS that does not apply as wanted to an element!</p>
-<p>=&gt; Creation of several rules to apply on the same element</p>
+<p>&rarr; Creation of several rules to apply on the same element</p>
 <p><strong>Solution</strong> : Creation of several rules to be applied on the same element
 voici comment faire une structure html. </p>
 <p><strong><div style="color: Royalblue;"> Cascade </div></strong></p>
 <p>Order of appearance of the rules in the CSS </p>
-<p>=&gt; 2 rules with the same specificity: the last one will be applied</p>
+<p>&rarr; 2 rules with the same specificity: the last one will be applied</p>
 <p><strong>Example: Color will have the final value Blue</strong></p>
 <p><img alt="cascading_example" src="../cascading_example.png" style="width:550px;height:350px;" /></p>
 <p><strong><div style="color: Royalblue;"> Specificity </div></strong></p>
@@ -1590,7 +1638,92 @@ json</li>
 <a id="__codelineno-15-20" name="__codelineno-15-20"></a><span class="c1">// write the string json into a file</span>
 <a id="__codelineno-15-21" name="__codelineno-15-21"></a><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s1">&#39;new_students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">jsonData</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
+<h2 id="storage"><div style="color: Royalblue;">Storage</div></h2>
+<ul>
+<li>In JavaScript, "storage" refers to the ability to store data locally in the Web browser. There are two main types of storage: <strong>localStorage</strong> and <strong>sessionStorage</strong>.<br></li>
+<li><strong>localStorage</strong>: localStorage enables data to be stored persistently in the browser. This means that stored data remains available even after the browser has been closed and reopened. Data stored in localStorage remains until explicitly deleted by the user or erased by the script.<br></li>
+<li>
+<p><strong>sessionStorage</strong>: Unlike localStorage, sessionStorage stores data for the duration of a browser session. This means that data stored in sessionStorage is available as long as the browser window or tab remains open. Once the session ends (i.e. when the user closes the tab or browser), the data stored in the sessionStorage is deleted.</p>
+</li>
+<li>
+<p>Example with localStorage: <br>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-16-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-16-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-16-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-16-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-16-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-16-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-16-10">10</a></span>
+<span class="normal"><a href="#__codelineno-16-11">11</a></span>
+<span class="normal"><a href="#__codelineno-16-12">12</a></span>
+<span class="normal"><a href="#__codelineno-16-13">13</a></span>
+<span class="normal"><a href="#__codelineno-16-14">14</a></span>
+<span class="normal"><a href="#__codelineno-16-15">15</a></span>
+<span class="normal"><a href="#__codelineno-16-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="c1">// store data in localStorage</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">);</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;30&#39;</span><span class="p">);</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="c1">// Get data from localStorage</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">);</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a>
+<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : John</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : 30</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11"></a>
+<a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="c1">// delete data from localStorage</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">);</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14"></a>
+<a id="__codelineno-16-15" name="__codelineno-16-15"></a><span class="c1">// delete all data from localStorage</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>Example with sessionStorage: <br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-17-10">10</a></span>
+<span class="normal"><a href="#__codelineno-17-11">11</a></span>
+<span class="normal"><a href="#__codelineno-17-12">12</a></span>
+<span class="normal"><a href="#__codelineno-17-13">13</a></span>
+<span class="normal"><a href="#__codelineno-17-14">14</a></span>
+<span class="normal"><a href="#__codelineno-17-15">15</a></span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1">// store data in sessionStorage</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Paris&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="c1">// get data from sessionStorage</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ville</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8"></a>
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : Alice</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">city</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : Paris</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11"></a>
+<a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="c1">// delete data from sessionStorage</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14"></a>
+<a id="__codelineno-17-15" name="__codelineno-17-15"></a><span class="c1">// delete all data from sessionStorage</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Rq: It's important to note that localStorage and sessionStorage are limited in terms of storage size (typically a few megabytes) and should not be used to store sensitive data, such as credentials or personal information, as these are accessible in JavaScript and may be subject to security attacks.</li>
+</ul>
 <h2 id="practical-work"><div style="color: Royalblue;">Practical work</div></h2>
+<ul>
+<li>Project presentation</li>
+<li>Create groups</li>
+<li>Choose a project theme</li>
+<li>Creation of HTML, CSS and JavaScript pages for the project</li>
+</ul>
 
 
 
