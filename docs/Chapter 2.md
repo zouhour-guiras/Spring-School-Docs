@@ -240,7 +240,7 @@ A type selector targets an HTML element (a tag) in your document:<br>
 
 **Why**: A CSS that does not apply as wanted to an element!
 
-=> Creation of several rules to apply on the same element
+&rarr; Creation of several rules to apply on the same element
 
 **Solution** : Creation of several rules to be applied on the same element
 voici comment faire une structure html. 
@@ -249,7 +249,7 @@ voici comment faire une structure html.
 
 Order of appearance of the rules in the CSS 
 
-=> 2 rules with the same specificity: the last one will be applied
+&rarr; 2 rules with the same specificity: the last one will be applied
 
 **Example: Color will have the final value Blue**
 
@@ -866,5 +866,57 @@ let jsonData = JSON.stringify({ students: students }, null, 2);
 // write the string json into a file
 fs.writeFileSync('new_students.json', jsonData, 'utf-8');
 ```
+## <div style="color: Royalblue;">Storage</div>##
+
+- In JavaScript, "storage" refers to the ability to store data locally in the Web browser. There are two main types of storage: **localStorage** and **sessionStorage**.<br>
+- **localStorage**: localStorage enables data to be stored persistently in the browser. This means that stored data remains available even after the browser has been closed and reopened. Data stored in localStorage remains until explicitly deleted by the user or erased by the script.<br>
+- **sessionStorage**: Unlike localStorage, sessionStorage stores data for the duration of a browser session. This means that data stored in sessionStorage is available as long as the browser window or tab remains open. Once the session ends (i.e. when the user closes the tab or browser), the data stored in the sessionStorage is deleted.
+
+- Example with localStorage: <br>
+```js linenums="1"
+// store data in localStorage
+localStorage.setItem('name', 'John');
+localStorage.setItem('age', '30');
+
+// Get data from localStorage
+const nom = localStorage.getItem('name');
+const age = localStorage.getItem('age');
+
+console.log(name); // display : John
+console.log(age); // display : 30
+
+// delete data from localStorage
+localStorage.removeItem('age');
+
+// delete all data from localStorage
+localStorage.clear();
+```
+- Example with sessionStorage: <br>
+
+```js linenums="1"
+// store data in sessionStorage
+sessionStorage.setItem('name', 'Alice');
+sessionStorage.setItem('city', 'Paris');
+
+// get data from sessionStorage
+const nom = sessionStorage.getItem('name');
+const ville = sessionStorage.getItem('city');
+
+console.log(name); // display : Alice
+console.log(city); // display : Paris
+
+// delete data from sessionStorage
+sessionStorage.removeItem('city');
+
+// delete all data from sessionStorage
+sessionStorage.clear();
+```
+
+- Rq: It's important to note that localStorage and sessionStorage are limited in terms of storage size (typically a few megabytes) and should not be used to store sensitive data, such as credentials or personal information, as these are accessible in JavaScript and may be subject to security attacks.
 
 ## <div style="color: Royalblue;">Practical work</div>##
+
+- Project presentation
+- Create groups
+- Choose a project theme
+- Creation of HTML, CSS and JavaScript pages for the project

@@ -54,7 +54,7 @@ Discover the evolution of the Web, from its creation to the present day.
 
 #### <div style="color: Royalblue;"> Week 2: From March 4 to March 8 </div>
 
-**Chapitre 3: Discover a modern web framework: Vue.Js**
+**Chapter 3: Discover a modern web framework: Vue.Js**
 
 - Introduction to Vue.js
 - Installation
@@ -72,13 +72,13 @@ Discover the evolution of the Web, from its creation to the present day.
 
 #### <div style="color: Royalblue;"> Week 3: From March 11 to March 15 </div> 
      
-**Chapitre 4: Introduction to the server side**
+**Chapter 4: Introduction to the server side**
 
 - Web server definition 
 - HTTP / HTTPS protocols 
 - HTTP request methods (GET, POST) 
 
-**Chapitre 5: Node.js / Express.js**
+**Chapter 5: Node.js / Express.js**
 
 - Introduction to Node.js
 - Node.js modules
@@ -91,7 +91,7 @@ Discover the evolution of the Web, from its creation to the present day.
 
 #### <div style="color: Royalblue;"> Week 4 : From March 18 to March 22 </div>
 
-**Chapitre 6: Authentication and database (security, data persistence)**
+**Chapter 6: Authentication and database (security, data persistence)**
  
 - Authentication: user registration, hash with bcrypt
 - Connecting a MySQL database to a Node.js application
