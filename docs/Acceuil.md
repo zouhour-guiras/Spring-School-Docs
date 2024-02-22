@@ -64,14 +64,6 @@ Discover the evolution of the Web, from its creation to the present day.
 - Single File Component (SFC) 
 - Vue Router 
 
-**Practical work** 
-
-- Creation of a Vue CLI project
-- Translation of project pages (html, css and javascript) into components
-- Configuration of the different routes in index.js file.
-
-#### <div style="color: Royalblue;"> Week 3: From March 11 to March 15 </div> 
-     
 **Chapter 4: Introduction to the server side**
 
 - Web server definition 
@@ -86,11 +78,13 @@ Discover the evolution of the Web, from its creation to the present day.
 - Callbacks and Promises
 
 **Practical work** 
-   
-- Implement http methods on the project website.
 
-#### <div style="color: Royalblue;"> Week 4 : From March 18 to March 22 </div>
+- Creation of a Vue CLI project
+- Translation of project pages (html, css and javascript) into components
+- Configuration of the different routes in index.js file.
 
+#### <div style="color: Royalblue;"> Week 3: From March 11 to March 15 </div> 
+     
 **Chapter 6: Authentication and database (security, data persistence)**
  
 - Authentication: user registration, hash with bcrypt
@@ -98,9 +92,17 @@ Discover the evolution of the Web, from its creation to the present day.
 - Executing SQL queries on a MySQL database with NodeJS
 - Using a MySQL database in NodeJS with Sequelize
 
+**Practical work** 
+   
+- Implement http methods on the project website.
+- Create and configure a database for project website. 
+
+#### <div style="color: Royalblue;"> Week 4 : From March 18 to March 22 </div>
+
+
 **Practical work**
 
-- Create and configure a database for project website.
+- Continue working on the project
 - Final presentation: demonstration of the project functionalities
 
 ## <div style="color: Royalblue;"> Suggested resources </div>
