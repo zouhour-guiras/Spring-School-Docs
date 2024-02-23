@@ -10,6 +10,28 @@
 
 A web server is a software application or hardware device that serves content to clients over the internet or an intranet using HTTP (Hypertext Transfer Protocol) or its secure variant, HTTPS (HTTP Secure). Web servers are responsible for delivering web pages, files, and other resources requested by clients, typically web browsers.
 
+
+![web-server](web-server.png){:style="width:600px;height:250px;"}</br>
+
+
+**<div style="color: Royalblue;"> what is the role of a web server? </div>**
+
+- Website data is generally stored in a database </br>
+- Relational database: MySQL, Postgres...</br>
+- Non-relational: MongoDB, etc.</br>
+
+&rarr; The role of the server is to act as an intermediary between the user and the database.</br>
+
+&rarr;The database is never directly accessible to the user
+
+&rarr; The role of the server in a website is to: <br>
+
+- Store user information<br>
+- Send the right information to users<br>
+- Ensure data security<br>
+- Check access and modification rights<br>
+- Validate request consistency<br>
+
 ## <div style="color: Royalblue;"> HTTP / HTTPS protocols  </div>
 
 How do computers communicate with each other?
