@@ -16,9 +16,9 @@
 
 ## <div style="color: Royalblue;"> A little bit of history… </div>
 
-![A little bit of history](little_history.png){:style="width:600px;height:200px;"}
+![A little bit of history](little_history.png){:style="width:800px;height:300px;"}
 
-![A little bit of history](history2.png){:style="width:600px;height:200px;"}
+![A little bit of history](history2.png){:style="width:800px;height:300px;"}
 
 ##### <div style="color: Royalblue;"> What is the Internet? </div>
 
@@ -39,7 +39,7 @@ Is a set of rules used to enable communication between devices on a computer net
 
 ##### <div style="color: Royalblue;"> The key players of the Internet </div>
 
-![key_players](key_players.png){:style="width:800px;height:300px;"}
+![key_players](key_players.png){:style="width:900px;height:350px;"}
 
 ##### <div style="color: Royalblue;"> Some examples of Internet protocols </div>
 
@@ -55,7 +55,7 @@ Is a set of rules used to enable communication between devices on a computer net
 
 ##### <div style="color: Royalblue;"> Web evolution </div>
 
-![Web_evolution](web_evolution.png){:style="width:800px;height:400px;"}
+![Web_evolution](web_evolution.png){:style="width:900px;height:400px;"}
 
 ##### <div style="color: Royalblue;"> How does the Web work? </div>
 
@@ -165,7 +165,7 @@ The most used languages are PHP, Ruby, Python, SQL <br>
 
 ##### <div style="color: Royalblue;"> Website editors </div>
 
-![WebsiteEditors](WebsiteEditors.png){:style="width:700px;height:200px;"}
+![WebsiteEditors](WebsiteEditors.png){:style="width:900px;height:350px;"}
 
 ##### <div style="color: Royalblue;"> Some examples </div>
 

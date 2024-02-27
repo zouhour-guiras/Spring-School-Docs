@@ -645,6 +645,28 @@ const promesse=new Promise((resolde,reject))=>{
 
 ![anonymous_function](anonymous_function.png){:style="width:600px;height:250px;"}
 
+**<div style="color: Royalblue;">Fetch function</div>** <br>
+
+In JavaScript, the `fetch()` function is used to make HTTP requests to resources, usually web APIs, and retrieve the data. It is Promise-based, meaning that it can process results asynchronously, using the `.then()` and 
+`.catch()` methods.
+
+```js linenums="1"
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erreur HTTP, statut ' + response.status);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('DATA getted with success :', data);
+    // Faire quelque chose avec les données ici
+  })
+  .catch(error => {
+    console.error('an error has occurred :', error);
+  })
+```
+
 **<div style="color: Royalblue;">The scope</div>**
 
 - Scope is often referred to when talking about global and local variables
@@ -660,6 +682,7 @@ console.log(terme);
 - The variable myfunction of type function has a global scope to the script <br>
 - The term variable is defined in the secret function and is therefore not accessible outside the scope of the function<br>
 - Conversely, what is defined outside a function is accessible inside a function<br>
+
 
 ## <div style="color: Royalblue;">Objects in JavaScript </div>##
 

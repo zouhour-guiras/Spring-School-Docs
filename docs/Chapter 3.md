@@ -578,16 +578,49 @@ export default {
 
 - You can see the [Official documentation](https://router.vuejs.org/) of vue router
 
-- Example:
-**AboutView.vue**
+- Example: Let's suppose we have two components: Home.vue and About.vue. We'll use router-link to create a navigation link between these two components.<br>
+
+**Home.vue**
 ```html linenums="1"
 <template>
-    <div>
-        <h1>About Us</h1>
-        <p>About our application</p>
-    </div>
+  <div>
+    <h1>Home page</h1>
+    <!-- Link to About page -->
+    <router-link to="/about">Go to the about page</router-link>
+  </div>
 </template>
+
+<script>
+export default {
+  name: 'Home'
+}
+</script>
 ```
+
+**About.vue**
+```html linenums="1"
+<template>
+  <div>
+    <h1>À propos de nous</h1>
+    <!-- Link to home page -->
+    <router-link to="/">Return to the home page</router-link>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'About'
+}
+</script>
+```
+
+- We use `<router-link>` to create navigation links between components. The to attribute specifies the URL to which we want to navigate.
+
+- In Home.vue, the link points to **/about**, so when you click on it, you'll be taken to the About.vue page.
+
+- In About.vue, the link points to **/** , so when you click on it, you'll be taken to the Home.vue page.
+
+- Routes are defined in the router configuration file(router/index.js) to manage navigation between the various pages of your application.
 
 ## <div style="color: Royalblue;">Practical work</div>
 
