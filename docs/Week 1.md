@@ -1,4 +1,200 @@
+
+# Week 1 : From February 26 to March 1
+
+# Chapter 1 : An introduction to the web
+
+
+## <div style="color: Royalblue;"> Table of contents </div>
+
+- History of the web
+- Client-server architecture
+- Static vs dynamic web
+- The difference between front-end and back-end 
+- Website editors and frameworks
+
+## <div style="color: Royalblue;"> The Web: what you need to know! </div>
+
+
+![what you need to know!](What_you_need_to_know.png){:style="width:700px;height:300px;:class="centered-image"}
+
+## <div style="color: Royalblue;"> A little bit of history… </div>
+
+![A little bit of history](little_history.png){:style="width:600px;height:200px;"}
+
+![A little bit of history](history2.png){:style="width:600px;height:200px;"}
+
+##### <div style="color: Royalblue;"> What is the Internet? </div>
+
+![Internet](Internet.png){:style="width:500px;height:200px;"}
+
+A global computer network consisting of a set of national, regional and private networks (networks of networks), which are linked by the TCP/IP communication protocol and which work together to provide a unique interface to their users.
+
+**TCP/IP communication protocol:** 
+**(Transmission Control Protocol/Internet Protocol)**
+Is a set of rules used to enable communication between devices on a computer network. It is widely used as a communications protocol on the Internet, and is also used in many local area networks (LANs) and corporate networks.
+
+##### <div style="color: Royalblue;"> Network & Computer network </div>
+
+![network_computer](network_computer.png){:style="width:700px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Communication protocol & TCP/IP suite </div>
+![communication_protocol](communication_protocol.png){:style="width:800px;height:300px;"}
+
+##### <div style="color: Royalblue;"> The key players of the Internet </div>
+
+![key_players](key_players.png){:style="width:800px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Some examples of Internet protocols </div>
+
+![example_protocols](example_protocols.png){:style="width:800px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Internet services </div>
+
+![internet_service](internet_service.png){:style="width:600px;height:300px;"}
+
+##### <div style="color: Royalblue;"> World Wide Web (WWW) </div>
+
+![WWW](WWW.png){:style="width:800px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Web evolution </div>
+
+![Web_evolution](web_evolution.png){:style="width:800px;height:400px;"}
+
+##### <div style="color: Royalblue;"> How does the Web work? </div>
+
+![Web_Work](Web_Work.png){:style="width:700px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Web servers </div>
+
+![Web_service](Web_service.png){:style="width:700px;height:300px;"}
+
+![Web_server_2](web_server_2.png){:style="width:700px;height:300px;"}
+
+➔ A program can be both server and client of other servers.<br>
+➔ retrieving a web page that contains information from a database <br>
+
+![Web_server3](web_server3.png){:style="width:600px;height:300px;"}
+
+## <div style="color: Royalblue;"> Client / Server </div>
+
+![Client_Server](Client_Server.png){:style="width:700px;height:300px;"}
+
+• The DNS (Domain Name System) protocol allow to match an IP address with a name in order to avoid to retain IP addresses.<br>
+Exemple : 195.83.142.250 ➔
+
+![DNS](DNS.png){:style="width:600px;height:300px;"}
+
+• The FQDN allows access to a machine on which a number of resources
+are available and which are served by different protocols.<br>
+• A URL (Uniform Resource Location) allows to specify which resources
+to reach, and with which protocol.
+
+![Client_Server2.png](Client_Server2.png){:style="width:600px;height:200px;"}
+
+## <div style="color: Royalblue;"> Static vs dynamic web </div>
+
+### <div style="color: Royalblue;"> A static WEB page </div>
+
+• Visible as designed<br>
+• Can present different forms of content: images, flash animations, video, music, etc.<br>
+• Its content does not change => Static <br>
+• Stored in the Web server which only displays it when requested <br>
+• The entire code that composes it is interpreted directly by the client (Web
+browser) <br>
+
+![Static_Web](Static_Web.png){:style="width:600px;height:200px;"}
+
+##### <div style="color: Royalblue;"> Composition of a web page </div>
+
+![page_content](page_content.png){:style="width:600px;height:300px;"}
+
+![Web_page_js](Web_page_js.png){:style="width:600px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Example of a web page managing a CV-library </div>
+
+![CV_sympsons](CV_sympsons.png){:style="width:800px;height:400px;"}
+
+![Example_CV](Example_CV.png){:style="width:800px;height:400px;"}
+
+• <span style="color:red;"> File:// </span> : local protocol <br>
+             - Files must be accessible on the machine used to view them <br>
+             - Files are not served by a web server <br>
+• <span style="color:red;"> http:// </span>: client-server protocol <br>
+             - Files are retrieved from the web server machine to the client
+machine (web browser) <br>
+             - Files are served by a server usually on another machine <br>
+
+<span style="color:red;"> Rq </span> :(firefox et chrome) :<span style="color:red;">[ctrl]+[maj]+i </span> gives access to a tool panel allowing
+to visualize the network exchanges
+
+![tool_panel](tool_panel.png){:style="width:500px;height:200px;"}
+
+##### <div style="color: Royalblue;"> Static Web: advantages and disadvantages</div>
+
+![avantage_desavantage_static_web](avantage_desavantage_static_web.png){:style="width:600px;height:300px;"}
+
+### <div style="color: Royalblue;"> A dynamic web page </div>
+
+![dynamic_page](dynamic_page.png){:style="width:700px;height:300px;"}
+
+![Dynamic_web_2](Dynamic_web_2.png){:style="width:700px;height:300px;"}
+
+![dynamic_web_3](dynamic_web_3.png){:style="width:800px;height:500px;"}
+
+##### <div style="color: Royalblue;"> Dynamic Web site: advantages </div>
+
+![Avantage_dynamic_web](Avantage_dynamic_web.png){:style="width:600px;height:400px;"}
+
+##### <div style="color: Royalblue;"> Dynamic Web site: disadvantages </div>
+
+![disavantage_dynamic_web](disavantage_dynamic_web.png){:style="width:700px;height:300px;"}
+
+## <div style="color: Royalblue;"> The difference between front-end and back-end </div>
+
+![FrontEnd_Backend](FrontEnd_Backend.png){:style="width:700px;height:400px;"}
+
+##### <div style="color: Royalblue;"> The Back-end: its competences </div>
+
+The Back-End is divided into three essential parts: <br>
+**Server (or web hosting)**: seen as a hard disk accessible 24 hours a day, on which the pages of the website are stored.<br>
+**Databases**: comparable to a large table with columns containing the necessary
+information on which the development is based, for example "name", "first name",
+"password", "current purchase".<br>
+**Dynamic programming languages**: allow to keep, process, modify data and provide updated information on a website (such as news, product sheets, images, videos, etc.).
+The most used languages are PHP, Ruby, Python, SQL <br>
+**Frameworks**: to make the code clearer, easier to modify and simpler to maintain as a team, for example: CakePHP, Symphony
+
+## <div style="color: Royalblue;"> Website editors and frameworks </div>
+
+##### <div style="color: Royalblue;"> Website editors </div>
+
+![WebsiteEditors](WebsiteEditors.png){:style="width:700px;height:200px;"}
+
+##### <div style="color: Royalblue;"> Some examples </div>
+
+![example_editors](example_editors.png){:style="width:600px;height:300px;"}
+
+![Webeditor2](Webeditor2.png){:style="width:600px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Frameworks </div>
+
+![Frameworks](Frameworks.png){:style="width:600px;height:300px;"}
+
+## <div style="color: Royalblue;"> Content Management System (CMS) </div>
+
+![ContentManagementSystem](ContentManagementSystem.png){:style="width:700px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Content Management System (Some examples) </div>
+
+![CMS_examples](CMS_examples.png){:style="width:700px;height:300px;"}
+
+##### <div style="color: Royalblue;"> Content Management System (Useful links) </div>
+
+![CMS_UsefulLinks](CMS_UsefulLinks.png){:style="width:700px;height:300px;"}
+
+
 # Chapter 2 : Master the basic technologies of client-side Web development 
+
 
 ## <div style="color: Royalblue;"> Table of contents </div>
 
@@ -42,7 +238,8 @@ Check your code : [https://validator.w3.org/](https://validator.w3.org/)
 • The line of code containing the Doctype is inserted at the very beginning of the page. You can place it on the first line of your HTML document if you wish. <br>
 • The Doctype should always be before the `<HTML>` tag.<br>
 • For a developer, the Doctype is used to validate his pages according to the chosen W3C standards. <br>
-• Its main purpose is to tell browsers how to interpret the document - or web page.With the arrival of HTML 5, the doctype was thus simplified to the maximum: <br>
+• Its main purpose is to tell browsers how to interpret the document or web page.
+• With the arrival of HTML 5, the doctype was thus simplified to the maximum: <br>
 
 **<div style="color: Royalblue;"> Create your first web page </div>**
 To create a web page, all you need to do is: <br>
@@ -69,7 +266,7 @@ To execute the html page, you need to run the file:
 
 - Any open tag must be closed: `<tag> ... </tag>`
     • Example: `<html> ... </html>`
-- Empty tags can be self-closing:
+- Empty tags can be self-closing: <br>
     • Example : `<br/>`
 - Nesting possible but no overlap: <br>
     • Example : <del>`<tag 1><tag 2></tag 1></tag 2>`</del>➔ `<tag 1> <tag 2> </tag 2> </tag 1>` <br>
@@ -108,7 +305,7 @@ to see more html elements visit this link:[more html elements](https://developer
 ![imageExample](imageExample.png){:style="width:600px;height:150px;"} <br>
 
 There are several attributes that can be defined: <br>
-&nbsp;&nbsp;  - src source image [URI or file name] alt <br>
+&nbsp;&nbsp;  - src source image [URI or file name] <br>
 &nbsp;&nbsp;  - alt in this attribute, you specify a descriptive text for users who can't see the image (e.g. something went wrong and the image isn't displayed). <br>
 &nbsp;&nbsp;  - height in pixels <br>
 &nbsp;&nbsp;  - width in pixels <br>
@@ -119,7 +316,7 @@ Lists: <br>
 &nbsp;&nbsp;  - Unordered lists `<ul> + <li>` <br>
 &nbsp;&nbsp;  - Ordered lists `<ol> + <li>`<br>
 
-![example_lists](example_lists.png){:style="width:600px;height:350px;"} <br>
+![example_lists](example_lists.png){:style="width:800px;height:500px;"} <br>
 
 Links: <br>
 
@@ -127,7 +324,7 @@ Links: <br>
 
 **<div style="color: Royalblue;">Html: Tables</div>**
 
-![Table_Example](Table_Example.png){:style="width:570px;height:400px;"} <br>
+![Table_Example](Table_Example.png){:style="width:570px;height:500px;"} <br>
 
 **<div style="color: Royalblue;">Html: Header and footer tags</div>**
 
@@ -144,7 +341,7 @@ Links: <br>
 - `<section>`: represents a generic section of a document. Rq: a section generally begins with a title <br>
 - `<nav>`: represents a section of a page with links to other pages or fragments of that page. <br>
 - `<div>`:(or division) is the generic container for stream content. As a "pure" container, the element represents nothing in itself. Instead, it's used to group content together so that it can be easily styled using the class or id attributes, to mark a section of a document as being written in a different language (using the lang attribute), and so on. Rq: This tag will be interesting to study when you discover CSS.<br>
-![example_Article_nav_section](example_Article_nav_section.png){:style="width:500px;height:450px;"} 
+![example_Article_nav_section](example_Article_nav_section.png){:style="width:600px;height:500px;"} 
 
 **<div style="color: Royalblue;">Html: Multimedia tags </div>**
 
@@ -195,7 +392,7 @@ To see more of the tags used in forms, please visit: [tags for forms](https://de
 - Use a semicolon ";" to separate each declaration from the next.
 
 You can also select multiple elements and apply a single set of rules to each of them. Separate multiple selectors with commas. For example: <br>
-![css_example2](css_example2.png){:style="width:300px;height:100px;"}
+![css_example2](css_example2.png){:style="width:500px;height:150px;"}
 
 **<div style="color: Royalblue;"> Some CSS properties </div>**
 ![css_properties](css_properties.png){:style="width:600px;height:300px;"}
@@ -286,7 +483,8 @@ are not.
 ## <div style="color: Royalblue;">Responsive Design</div> ##
 
 - A responsive interface adapts to the size of the screen, while remaining comfortable to use.<br>
-=> Need to design websites which can be viewed from any terminal, desktop PC or cell phone, with a comparable comfort of use.
+=> Need to design websites which can be viewed from any terminal, desktop PC or cell phone, with a comparable comfort of use.<br>
+
 ![responsiveDesign](responsiveDesign.png){:style="width:400px;height:300px;"}
 
 **<div style="color: Royalblue;">Responsive: the key steps</div>**
@@ -319,7 +517,7 @@ limits <br>
 The **media queries** allow, while remaining on a screentype terminal, to filter styles according to the size of this screen.<br>
 **\@media** applies CSS rules to a specific device. By using this attribute, it is therefore possible to define specific layouts for each device: screen, printer, smartphone, etc.
 
-![@media](@media.png){:style="width:250px;height:350px;"}
+![@media](@media.png){:style="width:600px;height:450px;"}
 
 ## <div style="color: Royalblue;">Flexbox</div>##
 
@@ -369,7 +567,7 @@ The term JavaScript has remained in the common vocabulary, but in fact it is ECM
 
 **<div style="color: Royalblue;"> Advantages and disadvantages </div>**
 
-![Av_dis](Av_dis.png){:style="width:700px;height:350px;"}
+![Av_dis](Av_dis.png){:style="width:800px;height:400px;"}
 
 **<div style="color: Royalblue;"> Where to put the Javascript? </div>**
 
@@ -429,6 +627,7 @@ It is also possible to define a constant using the keyword « const »<br>
    }
 
 ```
+
 - Multiple conditional structure: 
 
 ```js linenums="1" 
@@ -518,12 +717,11 @@ to one of our own procedures.
 **<div style="color: Royalblue;">Javascript : functions used with a user action</div>**
 
 Some examples : <br>
-- alert : opens a window with a given message,
-- modifier window.location to go to another page,
-- document.write: writes a given text,
-- setTimeout et setInterval allow respectively to delay and to repeat an instruction;
-- focus : allows to activate an element of the page (like the box to be filled in a form),
-blur to deactivate it.
+- alert : opens a window with a given message,<br>
+- modifier window.location to go to another page,<br>
+- document.write: writes a given text,<br>
+- setTimeout et setInterval allow respectively to delay and to repeat an instruction;<br>
+- focus : allows to activate an element of the page (like the box to be filled in a form), blur to deactivate it.<br>
 
 ```js linenums="1"
 //trigger immediate alert (alert)
@@ -563,7 +761,7 @@ To access a DOM element, you can use:<br>
 
 ## <div style="color: Royalblue;">Javascript: Synchronous Vs Asynchronous </div> ##
 
-![Asynch](Asynch.png){:style="width:500px;height:170px;"}
+![Asynch](Asynch.png){:style="width:700px;height:200px;"}
 
 
 **<div style="color: Royalblue;">Asynchronous in Javascript</div>**
@@ -642,7 +840,7 @@ const promesse=new Promise((resolde,reject))=>{
 
 ![anonymous_function](anonymous_function.png){:style="width:600px;height:250px;"}
 
-**<div style="color: Royalblue;">The The scope</div>**
+**<div style="color: Royalblue;">The scope</div>**
 
 - Scope is often referred to when talking about global and local variables
 
@@ -916,7 +1114,21 @@ sessionStorage.clear();
 
 ## <div style="color: Royalblue;">Practical work</div>##
 
-- Project presentation
-- Create groups
-- Choose a project theme
-- Creation of HTML, CSS and JavaScript pages for the project
+- Check that groups have been created and projects selected correctly
+- You can now start creating your web pages. <br>
+
+Start by creating the home page of your site (home page of a restaurant, museum, school or travel agency). <br>
+
+
+You can then move on to the page where you propose your offers, for example: <br>
+
+
+- the menu for the restaurant <br>
+- paintings and status for the museum, <br>
+- excursion offers for the travel agency <br>
+- departments, staff, classes for the school <br>
+
+Once you've finished these two pages, you can create other pages such as the user login page, the about us page...
+
+
+
