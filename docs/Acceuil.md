@@ -1,7 +1,3 @@
-
-<!-- <img src="efrei.png" alt="Nom de votre site" width="30" height="30"> -->
-# HOME
-
 # <div style="color: Royalblue;"> PC001-Web development </div>
 
 
