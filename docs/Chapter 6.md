@@ -1,6 +1,3 @@
-
-# Week 3: From March 11 to March 15
-
 # Chapter 6: Authentication and database (security, data persistence)
  
 ## <div style="color: Royalblue;"> Table of contents </div>
