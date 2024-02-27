@@ -1,0 +1,1053 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://zouhour-guiras.github.io/Spring-School-Docs/Chapter%201/">
+      
+      
+        <link rel="prev" href="../Acceuil/">
+      
+      
+        <link rel="next" href="../Chapter%202/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Chapter 1 : An introduction to the web - PC001 - Web Development</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="Royalblueue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-1-an-introduction-to-the-web" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PC001 - Web Development" class="md-header__button md-logo" aria-label="PC001 - Web Development" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PC001 - Web Development
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 1 : An introduction to the web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="Royalblueue" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="Royalblue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Acceuil/" class="md-tabs__link">
+        
+  
+    
+  
+  Acceuil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 1 : An introduction to the web
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%202/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 2 : Master the basic technologies of client-side Web development
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%203/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 3: Discover a modern web framework: Vue.Js
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%204/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 4: Introduction to the server side
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%205/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 5 : Node.js / Express.js
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Chapter%206/" class="md-tabs__link">
+        
+  
+    
+  
+  Chapter 6: Authentication and database (security, data persistence)
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PC001 - Web Development" class="md-nav__button md-logo" aria-label="PC001 - Web Development" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    PC001 - Web Development
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Acceuil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acceuil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 1 : An introduction to the web
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 : An introduction to the web
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+       Table of contents 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-web-what-you-need-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+       The Web: what you need to know! 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-little-bit-of-history" class="md-nav__link">
+    <span class="md-ellipsis">
+       A little bit of history… 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A little bit of history…">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-the-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+       What is the Internet? 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-computer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+       Network &amp; Computer network 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-protocol-tcpip-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+       Communication protocol &amp; TCP/IP suite 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-key-players-of-the-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+       The key players of the Internet 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-examples-of-internet-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+       Some examples of Internet protocols 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-services" class="md-nav__link">
+    <span class="md-ellipsis">
+       Internet services 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#world-wide-web-www" class="md-nav__link">
+    <span class="md-ellipsis">
+       World Wide Web (WWW) 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+       Web evolution 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-the-web-work" class="md-nav__link">
+    <span class="md-ellipsis">
+       How does the Web work? 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-servers" class="md-nav__link">
+    <span class="md-ellipsis">
+       Web servers 
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-server" class="md-nav__link">
+    <span class="md-ellipsis">
+       Client / Server 
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-vs-dynamic-web" class="md-nav__link">
+    <span class="md-ellipsis">
+       Static vs dynamic web 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Static vs dynamic web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-static-web-page" class="md-nav__link">
+    <span class="md-ellipsis">
+       A static WEB page 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A static WEB page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composition-of-a-web-page" class="md-nav__link">
+    <span class="md-ellipsis">
+       Composition of a web page 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-a-web-page-managing-a-cv-library" class="md-nav__link">
+    <span class="md-ellipsis">
+       Example of a web page managing a CV-library 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-web-advantages-and-disadvantages" class="md-nav__link">
+    <span class="md-ellipsis">
+       Static Web: advantages and disadvantages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-dynamic-web-page" class="md-nav__link">
+    <span class="md-ellipsis">
+       A dynamic web page 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A dynamic web page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-web-site-advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+       Dynamic Web site: advantages 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-web-site-disadvantages" class="md-nav__link">
+    <span class="md-ellipsis">
+       Dynamic Web site: disadvantages 
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-difference-between-front-end-and-back-end" class="md-nav__link">
+    <span class="md-ellipsis">
+       The difference between front-end and back-end 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The difference between front-end and back-end">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-back-end-its-competences" class="md-nav__link">
+    <span class="md-ellipsis">
+       The Back-end: its competences 
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website-editors-and-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+       Website editors and frameworks 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Website editors and frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#website-editors" class="md-nav__link">
+    <span class="md-ellipsis">
+       Website editors 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+       Some examples 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+       Frameworks 
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-management-system-cms" class="md-nav__link">
+    <span class="md-ellipsis">
+       Content Management System (CMS) 
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Management System (CMS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#content-management-system-some-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+       Content Management System (Some examples) 
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-management-system-useful-links" class="md-nav__link">
+    <span class="md-ellipsis">
+       Content Management System (Useful links) 
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2 : Master the basic technologies of client-side Web development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3: Discover a modern web framework: Vue.Js
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%204/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 4: Introduction to the server side
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%205/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5 : Node.js / Express.js
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter%206/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6: Authentication and database (security, data persistence)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chapter-1-an-introduction-to-the-web">Chapter 1 : An introduction to the web</h1>
+<h2 id="table-of-contents"><div style="color: Royalblue;"> Table of contents </div></h2>
+<ul>
+<li>History of the web</li>
+<li>Client-server architecture</li>
+<li>Static vs dynamic web</li>
+<li>The difference between front-end and back-end </li>
+<li>Website editors and frameworks</li>
+</ul>
+<h2 id="the-web-what-you-need-to-know"><div style="color: Royalblue;"> The Web: what you need to know! </div></h2>
+<p><img alt="what you need to know!" centered-image_="centered-image&quot;" src="../What_you_need_to_know.png" style="width:700px;height:300px;:class=" /></p>
+<h2 id="a-little-bit-of-history"><div style="color: Royalblue;"> A little bit of history… </div></h2>
+<p><img alt="A little bit of history" src="../little_history.png" style="width:600px;height:200px;" /></p>
+<p><img alt="A little bit of history" src="../history2.png" style="width:600px;height:200px;" /></p>
+<h5 id="what-is-the-internet"><div style="color: Royalblue;"> What is the Internet? </div></h5>
+<p><img alt="Internet" src="../Internet.png" style="width:500px;height:200px;" /></p>
+<p>A global computer network consisting of a set of national, regional and private networks (networks of networks), which are linked by the TCP/IP communication protocol and which work together to provide a unique interface to their users.</p>
+<p><strong>TCP/IP communication protocol:</strong> 
+<strong>(Transmission Control Protocol/Internet Protocol)</strong>
+Is a set of rules used to enable communication between devices on a computer network. It is widely used as a communications protocol on the Internet, and is also used in many local area networks (LANs) and corporate networks.</p>
+<h5 id="network-computer-network"><div style="color: Royalblue;"> Network &amp; Computer network </div></h5>
+<p><img alt="network_computer" src="../network_computer.png" style="width:700px;height:300px;" /></p>
+<h5 id="communication-protocol-tcpip-suite"><div style="color: Royalblue;"> Communication protocol &amp; TCP/IP suite </div></h5>
+<p><img alt="communication_protocol" src="../communication_protocol.png" style="width:800px;height:300px;" /></p>
+<h5 id="the-key-players-of-the-internet"><div style="color: Royalblue;"> The key players of the Internet </div></h5>
+<p><img alt="key_players" src="../key_players.png" style="width:800px;height:300px;" /></p>
+<h5 id="some-examples-of-internet-protocols"><div style="color: Royalblue;"> Some examples of Internet protocols </div></h5>
+<p><img alt="example_protocols" src="../example_protocols.png" style="width:800px;height:300px;" /></p>
+<h5 id="internet-services"><div style="color: Royalblue;"> Internet services </div></h5>
+<p><img alt="internet_service" src="../internet_service.png" style="width:600px;height:300px;" /></p>
+<h5 id="world-wide-web-www"><div style="color: Royalblue;"> World Wide Web (WWW) </div></h5>
+<p><img alt="WWW" src="../WWW.png" style="width:800px;height:300px;" /></p>
+<h5 id="web-evolution"><div style="color: Royalblue;"> Web evolution </div></h5>
+<p><img alt="Web_evolution" src="../web_evolution.png" style="width:800px;height:400px;" /></p>
+<h5 id="how-does-the-web-work"><div style="color: Royalblue;"> How does the Web work? </div></h5>
+<p><img alt="Web_Work" src="../Web_Work.png" style="width:700px;height:300px;" /></p>
+<h5 id="web-servers"><div style="color: Royalblue;"> Web servers </div></h5>
+<p><img alt="Web_service" src="../Web_service.png" style="width:700px;height:300px;" /></p>
+<p><img alt="Web_server_2" src="../web_server_2.png" style="width:700px;height:300px;" /></p>
+<p>➔ A program can be both server and client of other servers.<br>
+➔ retrieving a web page that contains information from a database <br></p>
+<p><img alt="Web_server3" src="../web_server3.png" style="width:600px;height:300px;" /></p>
+<h2 id="client-server"><div style="color: Royalblue;"> Client / Server </div></h2>
+<p><img alt="Client_Server" src="../Client_Server.png" style="width:700px;height:300px;" /></p>
+<p>• The DNS (Domain Name System) protocol allow to match an IP address with a name in order to avoid to retain IP addresses.<br>
+Exemple : 195.83.142.250 ➔</p>
+<p><img alt="DNS" src="../DNS.png" style="width:600px;height:300px;" /></p>
+<p>• The FQDN allows access to a machine on which a number of resources
+are available and which are served by different protocols.<br>
+• A URL (Uniform Resource Location) allows to specify which resources
+to reach, and with which protocol.</p>
+<p><img alt="Client_Server2.png" src="../Client_Server2.png" style="width:600px;height:200px;" /></p>
+<h2 id="static-vs-dynamic-web"><div style="color: Royalblue;"> Static vs dynamic web </div></h2>
+<h3 id="a-static-web-page"><div style="color: Royalblue;"> A static WEB page </div></h3>
+<p>• Visible as designed<br>
+• Can present different forms of content: images, flash animations, video, music, etc.<br>
+• Its content does not change =&gt; Static <br>
+• Stored in the Web server which only displays it when requested <br>
+• The entire code that composes it is interpreted directly by the client (Web
+browser) <br></p>
+<p><img alt="Static_Web" src="../Static_Web.png" style="width:600px;height:200px;" /></p>
+<h5 id="composition-of-a-web-page"><div style="color: Royalblue;"> Composition of a web page </div></h5>
+<p><img alt="page_content" src="../page_content.png" style="width:600px;height:300px;" /></p>
+<p><img alt="Web_page_js" src="../Web_page_js.png" style="width:600px;height:300px;" /></p>
+<h5 id="example-of-a-web-page-managing-a-cv-library"><div style="color: Royalblue;"> Example of a web page managing a CV-library </div></h5>
+<p><img alt="CV_sympsons" src="../CV_sympsons.png" style="width:800px;height:400px;" /></p>
+<p><img alt="Example_CV" src="../Example_CV.png" style="width:800px;height:400px;" /></p>
+<p>• <span style="color:red;"> File:// </span> : local protocol <br>
+             - Files must be accessible on the machine used to view them <br>
+             - Files are not served by a web server <br>
+• <span style="color:red;"> http:// </span>: client-server protocol <br>
+             - Files are retrieved from the web server machine to the client
+machine (web browser) <br>
+             - Files are served by a server usually on another machine <br></p>
+<p><span style="color:red;"> Rq </span> :(firefox et chrome) :<span style="color:red;">[ctrl]+[maj]+i </span> gives access to a tool panel allowing
+to visualize the network exchanges</p>
+<p><img alt="tool_panel" src="../tool_panel.png" style="width:500px;height:200px;" /></p>
+<h5 id="static-web-advantages-and-disadvantages"><div style="color: Royalblue;"> Static Web: advantages and disadvantages</div></h5>
+<p><img alt="avantage_desavantage_static_web" src="../avantage_desavantage_static_web.png" style="width:600px;height:300px;" /></p>
+<h3 id="a-dynamic-web-page"><div style="color: Royalblue;"> A dynamic web page </div></h3>
+<p><img alt="dynamic_page" src="../dynamic_page.png" style="width:700px;height:300px;" /></p>
+<p><img alt="Dynamic_web_2" src="../Dynamic_web_2.png" style="width:700px;height:300px;" /></p>
+<p><img alt="dynamic_web_3" src="../dynamic_web_3.png" style="width:800px;height:500px;" /></p>
+<h5 id="dynamic-web-site-advantages"><div style="color: Royalblue;"> Dynamic Web site: advantages </div></h5>
+<p><img alt="Avantage_dynamic_web" src="../Avantage_dynamic_web.png" style="width:600px;height:400px;" /></p>
+<h5 id="dynamic-web-site-disadvantages"><div style="color: Royalblue;"> Dynamic Web site: disadvantages </div></h5>
+<p><img alt="disavantage_dynamic_web" src="../disavantage_dynamic_web.png" style="width:700px;height:300px;" /></p>
+<h2 id="the-difference-between-front-end-and-back-end"><div style="color: Royalblue;"> The difference between front-end and back-end </div></h2>
+<p><img alt="FrontEnd_Backend" src="../FrontEnd_Backend.png" style="width:700px;height:400px;" /></p>
+<h5 id="the-back-end-its-competences"><div style="color: Royalblue;"> The Back-end: its competences </div></h5>
+<p>The Back-End is divided into three essential parts: <br>
+<strong>Server (or web hosting)</strong>: seen as a hard disk accessible 24 hours a day, on which the pages of the website are stored.<br>
+<strong>Databases</strong>: comparable to a large table with columns containing the necessary
+information on which the development is based, for example "name", "first name",
+"password", "current purchase".<br>
+<strong>Dynamic programming languages</strong>: allow to keep, process, modify data and provide updated information on a website (such as news, product sheets, images, videos, etc.).
+The most used languages are PHP, Ruby, Python, SQL <br>
+<strong>Frameworks</strong>: to make the code clearer, easier to modify and simpler to maintain as a team, for example: CakePHP, Symphony</p>
+<h2 id="website-editors-and-frameworks"><div style="color: Royalblue;"> Website editors and frameworks </div></h2>
+<h5 id="website-editors"><div style="color: Royalblue;"> Website editors </div></h5>
+<p><img alt="WebsiteEditors" src="../WebsiteEditors.png" style="width:700px;height:200px;" /></p>
+<h5 id="some-examples"><div style="color: Royalblue;"> Some examples </div></h5>
+<p><img alt="example_editors" src="../example_editors.png" style="width:600px;height:300px;" /></p>
+<p><img alt="Webeditor2" src="../Webeditor2.png" style="width:600px;height:300px;" /></p>
+<h5 id="frameworks"><div style="color: Royalblue;"> Frameworks </div></h5>
+<p><img alt="Frameworks" src="../Frameworks.png" style="width:600px;height:300px;" /></p>
+<h2 id="content-management-system-cms"><div style="color: Royalblue;"> Content Management System (CMS) </div></h2>
+<p><img alt="ContentManagementSystem" src="../ContentManagementSystem.png" style="width:700px;height:300px;" /></p>
+<h5 id="content-management-system-some-examples"><div style="color: Royalblue;"> Content Management System (Some examples) </div></h5>
+<p><img alt="CMS_examples" src="../CMS_examples.png" style="width:700px;height:300px;" /></p>
+<h5 id="content-management-system-useful-links"><div style="color: Royalblue;"> Content Management System (Useful links) </div></h5>
+<p><img alt="CMS_UsefulLinks" src="../CMS_UsefulLinks.png" style="width:700px;height:300px;" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/zouhour-guiras"  target="_blank" rel="noopener">Zouhour Guiras</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+    
+  </body>
+</html>
