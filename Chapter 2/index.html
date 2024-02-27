@@ -1394,21 +1394,52 @@ operation</div>
 <li>It is possible to define a function directly inside another function</li>
 </ul>
 <p><img alt="anonymous_function" src="../anonymous_function.png" style="width:600px;height:250px;" /></p>
+<p><strong><div style="color: Royalblue;">Fetch function</div></strong> <br></p>
+<p>In JavaScript, the <code>fetch()</code> function is used to make HTTP requests to resources, usually web APIs, and retrieve the data. It is Promise-based, meaning that it can process results asynchronously, using the <code>.then()</code> and 
+<code>.catch()</code> methods.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">)</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">      </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">&#39;Erreur HTTP, statut &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="w">  </span><span class="p">})</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DATA getted with success :&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">);</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">    </span><span class="c1">// Faire quelque chose avec les données ici</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">  </span><span class="p">})</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;an error has occurred :&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="w">  </span><span class="p">})</span>
+</code></pre></div></td></tr></table></div>
 <p><strong><div style="color: Royalblue;">The scope</div></strong></p>
 <ul>
 <li>Scope is often referred to when talking about global and local variables</li>
 </ul>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">mafonction</span><span class="p">(){</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">terme</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span><span class="p">;</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;Hello everybody&#39;</span><span class="p">;</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="p">}</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mafonction</span><span class="p">());</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">terme</span><span class="p">);</span>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">mafonction</span><span class="p">(){</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">terme</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span><span class="p">;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;Hello everybody&#39;</span><span class="p">;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="p">}</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mafonction</span><span class="p">());</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">terme</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
 - The variable myfunction of type function has a global scope to the script <br>
 - The term variable is defined in the secret function and is therefore not accessible outside the scope of the function<br>
@@ -1433,65 +1464,6 @@ operation</div>
 <li>
 <p>Example 1 : creation of an object called "Person" <br></p>
 </li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-10-10">10</a></span>
-<span class="normal"><a href="#__codelineno-10-11">11</a></span>
-<span class="normal"><a href="#__codelineno-10-12">12</a></span>
-<span class="normal"><a href="#__codelineno-10-13">13</a></span>
-<span class="normal"><a href="#__codelineno-10-14">14</a></span>
-<span class="normal"><a href="#__codelineno-10-15">15</a></span>
-<span class="normal"><a href="#__codelineno-10-16">16</a></span>
-<span class="normal"><a href="#__codelineno-10-17">17</a></span>
-<span class="normal"><a href="#__codelineno-10-18">18</a></span>
-<span class="normal"><a href="#__codelineno-10-19">19</a></span>
-<span class="normal"><a href="#__codelineno-10-20">20</a></span>
-<span class="normal"><a href="#__codelineno-10-21">21</a></span>
-<span class="normal"><a href="#__codelineno-10-22">22</a></span>
-<span class="normal"><a href="#__codelineno-10-23">23</a></span>
-<span class="normal"><a href="#__codelineno-10-24">24</a></span>
-<span class="normal"><a href="#__codelineno-10-25">25</a></span>
-<span class="normal"><a href="#__codelineno-10-26">26</a></span>
-<span class="normal"><a href="#__codelineno-10-27">27</a></span>
-<span class="normal"><a href="#__codelineno-10-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1">// Definition of the object person</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Zouhour&quot;</span><span class="p">,</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">  </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Guiras&quot;</span><span class="p">,</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">  </span><span class="c1">// method to display person information</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">  </span><span class="nx">DisplayDetails</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;name:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Surname:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">surname</span><span class="p">);</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Age:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13"></a>
-<a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">  </span><span class="c1">// Method to change the name</span>
-<a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">  </span><span class="nx">changeName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">newName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">newName</span><span class="p">;</span>
-<a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="p">};</span>
-<a id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="c1">// Display initial person information</span>
-<a id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Display initial person information&quot;</span><span class="p">);</span>
-<a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">DisplayDetails</span><span class="p">();</span>
-<a id="__codelineno-10-22" name="__codelineno-10-22"></a>
-<a id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="c1">// Change person name</span>
-<a id="__codelineno-10-24" name="__codelineno-10-24"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">changeName</span><span class="p">(</span><span class="s2">&quot;Jane&quot;</span><span class="p">);</span>
-<a id="__codelineno-10-25" name="__codelineno-10-25"></a>
-<a id="__codelineno-10-26" name="__codelineno-10-26"></a><span class="c1">// Display new person information</span>
-<a id="__codelineno-10-27" name="__codelineno-10-27"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\n updated person information&quot;</span><span class="p">);</span>
-<a id="__codelineno-10-28" name="__codelineno-10-28"></a><span class="nx">Personne</span><span class="p">.</span><span class="nx">DisplayDetails</span><span class="p">();</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li>Example 2: Manage a date object <br></li>
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
@@ -1520,58 +1492,37 @@ operation</div>
 <span class="normal"><a href="#__codelineno-11-25">25</a></span>
 <span class="normal"><a href="#__codelineno-11-26">26</a></span>
 <span class="normal"><a href="#__codelineno-11-27">27</a></span>
-<span class="normal"><a href="#__codelineno-11-28">28</a></span>
-<span class="normal"><a href="#__codelineno-11-29">29</a></span>
-<span class="normal"><a href="#__codelineno-11-30">30</a></span>
-<span class="normal"><a href="#__codelineno-11-31">31</a></span>
-<span class="normal"><a href="#__codelineno-11-32">32</a></span>
-<span class="normal"><a href="#__codelineno-11-33">33</a></span>
-<span class="normal"><a href="#__codelineno-11-34">34</a></span>
-<span class="normal"><a href="#__codelineno-11-35">35</a></span>
-<span class="normal"><a href="#__codelineno-11-36">36</a></span>
-<span class="normal"><a href="#__codelineno-11-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1">// Create an object date which presents the current date. </span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">currentDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a>
-<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="c1">// display current date</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current Date :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">);</span>
+<span class="normal"><a href="#__codelineno-11-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1">// Definition of the object person</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Zouhour&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="w">  </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Guiras&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">  </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">33</span><span class="p">,</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6"></a>
-<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="c1">// get the year</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="kd">let</span><span class="w"> </span><span class="nx">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;current year :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">year</span><span class="p">);</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10"></a>
-<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="c1">// get month (0-11)</span>
-<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="kd">let</span><span class="w"> </span><span class="nx">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">();</span>
-<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current month:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">month</span><span class="p">);</span>
-<a id="__codelineno-11-14" name="__codelineno-11-14"></a>
-<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="c1">// get day of the month (1-31)</span>
-<a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="kd">let</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
-<a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current day of the month :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="p">);</span>
-<a id="__codelineno-11-18" name="__codelineno-11-18"></a>
-<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="c1">// get day of the week (0-6)</span>
-<a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="kd">let</span><span class="w"> </span><span class="nx">dayweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">day</span><span class="p">.</span><span class="nx">getDay</span><span class="p">();</span>
-<a id="__codelineno-11-21" name="__codelineno-11-21"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current day of the week :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="nx">week</span><span class="p">);</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">  </span><span class="c1">// method to display person information</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="w">  </span><span class="nx">DisplayDetails</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;name:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Surname:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">surname</span><span class="p">);</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Age:&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a>
+<a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">  </span><span class="c1">// Method to change the name</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="w">  </span><span class="nx">changeName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">newName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">newName</span><span class="p">;</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="p">};</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="c1">// Display initial person information</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Display initial person information&quot;</span><span class="p">);</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">DisplayDetails</span><span class="p">();</span>
 <a id="__codelineno-11-22" name="__codelineno-11-22"></a>
-<a id="__codelineno-11-23" name="__codelineno-11-23"></a><span class="c1">// get hour</span>
-<a id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="kd">let</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getHours</span><span class="p">();</span>
-<a id="__codelineno-11-25" name="__codelineno-11-25"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current hour :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hour</span><span class="p">);</span>
-<a id="__codelineno-11-26" name="__codelineno-11-26"></a>
-<a id="__codelineno-11-27" name="__codelineno-11-27"></a><span class="c1">// get minutes</span>
-<a id="__codelineno-11-28" name="__codelineno-11-28"></a><span class="kd">let</span><span class="w"> </span><span class="nx">minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">();</span>
-<a id="__codelineno-11-29" name="__codelineno-11-29"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current minutes:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">minutes</span><span class="p">);</span>
-<a id="__codelineno-11-30" name="__codelineno-11-30"></a>
-<a id="__codelineno-11-31" name="__codelineno-11-31"></a><span class="c1">// get seconds</span>
-<a id="__codelineno-11-32" name="__codelineno-11-32"></a><span class="kd">let</span><span class="w"> </span><span class="nx">seconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">();</span>
-<a id="__codelineno-11-33" name="__codelineno-11-33"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current Seconds :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">seconds</span><span class="p">);</span>
-<a id="__codelineno-11-34" name="__codelineno-11-34"></a>
-<a id="__codelineno-11-35" name="__codelineno-11-35"></a><span class="c1">// get milliseconds</span>
-<a id="__codelineno-11-36" name="__codelineno-11-36"></a><span class="kd">let</span><span class="w"> </span><span class="nx">milliseconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMilliseconds</span><span class="p">();</span>
-<a id="__codelineno-11-37" name="__codelineno-11-37"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current millisecondes :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">milliseconds</span><span class="p">);</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23"></a><span class="c1">// Change person name</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">changeName</span><span class="p">(</span><span class="s2">&quot;Jane&quot;</span><span class="p">);</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25"></a>
+<a id="__codelineno-11-26" name="__codelineno-11-26"></a><span class="c1">// Display new person information</span>
+<a id="__codelineno-11-27" name="__codelineno-11-27"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\n updated person information&quot;</span><span class="p">);</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28"></a><span class="nx">Personne</span><span class="p">.</span><span class="nx">DisplayDetails</span><span class="p">();</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="the-iterable-object-array"><div style="color: Royalblue;">The iterable object : Array</div></h2>
 <ul>
-<li>Object used to create arrays</li>
-<li>Array objects have methods to browse and modify their contents</li>
-<li>To see the list of methods that can be used to manipulate arrays, please visit this link : <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array</a> <br></li>
+<li>Example 2: Manage a date object <br></li>
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
@@ -1594,28 +1545,108 @@ operation</div>
 <span class="normal"><a href="#__codelineno-12-19">19</a></span>
 <span class="normal"><a href="#__codelineno-12-20">20</a></span>
 <span class="normal"><a href="#__codelineno-12-21">21</a></span>
-<span class="normal"><a href="#__codelineno-12-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">students</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Jean&#39;</span><span class="p">,</span><span class="s1">&#39;Paul&#39;</span><span class="p">,</span><span class="s1">&#39;David&#39;</span><span class="p">];</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="c1">// it will display 3</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1">// The access to an element of the array is done via its index </span>
-<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">first</span><span class="o">=</span><span class="nx">students</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="c1">//Jean</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="kd">let</span><span class="w"> </span><span class="nx">second</span><span class="o">=</span><span class="nx">students</span><span class="p">[</span><span class="mf">2</span><span class="p">];</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="c1">//David</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="c1">//Loop on the content of the table</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="nx">students</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">array</span><span class="p">)</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="p">{</span>
-<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="nx">index</span><span class="p">);</span>
-<a id="__codelineno-12-13" name="__codelineno-12-13"></a>
-<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="p">});</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="c1">// Jean 0</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="c1">// Paul 1</span>
-<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="c1">// David 2</span>
+<span class="normal"><a href="#__codelineno-12-22">22</a></span>
+<span class="normal"><a href="#__codelineno-12-23">23</a></span>
+<span class="normal"><a href="#__codelineno-12-24">24</a></span>
+<span class="normal"><a href="#__codelineno-12-25">25</a></span>
+<span class="normal"><a href="#__codelineno-12-26">26</a></span>
+<span class="normal"><a href="#__codelineno-12-27">27</a></span>
+<span class="normal"><a href="#__codelineno-12-28">28</a></span>
+<span class="normal"><a href="#__codelineno-12-29">29</a></span>
+<span class="normal"><a href="#__codelineno-12-30">30</a></span>
+<span class="normal"><a href="#__codelineno-12-31">31</a></span>
+<span class="normal"><a href="#__codelineno-12-32">32</a></span>
+<span class="normal"><a href="#__codelineno-12-33">33</a></span>
+<span class="normal"><a href="#__codelineno-12-34">34</a></span>
+<span class="normal"><a href="#__codelineno-12-35">35</a></span>
+<span class="normal"><a href="#__codelineno-12-36">36</a></span>
+<span class="normal"><a href="#__codelineno-12-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1">// Create an object date which presents the current date. </span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">currentDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1">// display current date</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current Date :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">);</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="c1">// get the year</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="kd">let</span><span class="w"> </span><span class="nx">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;current year :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">year</span><span class="p">);</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="c1">// get month (0-11)</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="kd">let</span><span class="w"> </span><span class="nx">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">();</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current month:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">month</span><span class="p">);</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="c1">// get day of the month (1-31)</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="kd">let</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current day of the month :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="p">);</span>
 <a id="__codelineno-12-18" name="__codelineno-12-18"></a>
-<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="c1">//Add to end, remove from start/end an element </span>
-<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="kd">let</span><span class="w"> </span><span class="ow">new</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;Zouhour&#39;</span><span class="p">);</span>
-<a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="kd">let</span><span class="w"> </span><span class="nx">last</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
-<a id="__codelineno-12-22" name="__codelineno-12-22"></a><span class="kd">let</span><span class="w"> </span><span class="nx">first</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="c1">// get day of the week (0-6)</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="kd">let</span><span class="w"> </span><span class="nx">dayweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">day</span><span class="p">.</span><span class="nx">getDay</span><span class="p">();</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current day of the week :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="nx">week</span><span class="p">);</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22"></a>
+<a id="__codelineno-12-23" name="__codelineno-12-23"></a><span class="c1">// get hour</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24"></a><span class="kd">let</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getHours</span><span class="p">();</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current hour :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">hour</span><span class="p">);</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26"></a>
+<a id="__codelineno-12-27" name="__codelineno-12-27"></a><span class="c1">// get minutes</span>
+<a id="__codelineno-12-28" name="__codelineno-12-28"></a><span class="kd">let</span><span class="w"> </span><span class="nx">minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">();</span>
+<a id="__codelineno-12-29" name="__codelineno-12-29"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current minutes:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">minutes</span><span class="p">);</span>
+<a id="__codelineno-12-30" name="__codelineno-12-30"></a>
+<a id="__codelineno-12-31" name="__codelineno-12-31"></a><span class="c1">// get seconds</span>
+<a id="__codelineno-12-32" name="__codelineno-12-32"></a><span class="kd">let</span><span class="w"> </span><span class="nx">seconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">();</span>
+<a id="__codelineno-12-33" name="__codelineno-12-33"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current Seconds :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">seconds</span><span class="p">);</span>
+<a id="__codelineno-12-34" name="__codelineno-12-34"></a>
+<a id="__codelineno-12-35" name="__codelineno-12-35"></a><span class="c1">// get milliseconds</span>
+<a id="__codelineno-12-36" name="__codelineno-12-36"></a><span class="kd">let</span><span class="w"> </span><span class="nx">milliseconds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMilliseconds</span><span class="p">();</span>
+<a id="__codelineno-12-37" name="__codelineno-12-37"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Current millisecondes :&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">milliseconds</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="the-iterable-object-array"><div style="color: Royalblue;">The iterable object : Array</div></h2>
+<ul>
+<li>Object used to create arrays</li>
+<li>Array objects have methods to browse and modify their contents</li>
+<li>To see the list of methods that can be used to manipulate arrays, please visit this link : <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array</a> <br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span>
+<span class="normal"><a href="#__codelineno-13-14">14</a></span>
+<span class="normal"><a href="#__codelineno-13-15">15</a></span>
+<span class="normal"><a href="#__codelineno-13-16">16</a></span>
+<span class="normal"><a href="#__codelineno-13-17">17</a></span>
+<span class="normal"><a href="#__codelineno-13-18">18</a></span>
+<span class="normal"><a href="#__codelineno-13-19">19</a></span>
+<span class="normal"><a href="#__codelineno-13-20">20</a></span>
+<span class="normal"><a href="#__codelineno-13-21">21</a></span>
+<span class="normal"><a href="#__codelineno-13-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">students</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Jean&#39;</span><span class="p">,</span><span class="s1">&#39;Paul&#39;</span><span class="p">,</span><span class="s1">&#39;David&#39;</span><span class="p">];</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="c1">// it will display 3</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="c1">// The access to an element of the array is done via its index </span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">first</span><span class="o">=</span><span class="nx">students</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="c1">//Jean</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="kd">let</span><span class="w"> </span><span class="nx">second</span><span class="o">=</span><span class="nx">students</span><span class="p">[</span><span class="mf">2</span><span class="p">];</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="c1">//David</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="c1">//Loop on the content of the table</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="nx">students</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">array</span><span class="p">)</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="p">{</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span><span class="nx">index</span><span class="p">);</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14"></a><span class="p">});</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="c1">// Jean 0</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16"></a><span class="c1">// Paul 1</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="c1">// David 2</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18"></a>
+<a id="__codelineno-13-19" name="__codelineno-13-19"></a><span class="c1">//Add to end, remove from start/end an element </span>
+<a id="__codelineno-13-20" name="__codelineno-13-20"></a><span class="kd">let</span><span class="w"> </span><span class="ow">new</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;Zouhour&#39;</span><span class="p">);</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21"></a><span class="kd">let</span><span class="w"> </span><span class="nx">last</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22"></a><span class="kd">let</span><span class="w"> </span><span class="nx">first</span><span class="o">=</span><span class="nx">students</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="the-json-format"><div style="color: Royalblue;">The JSON format</div></h2>
 <ul>
@@ -1634,43 +1665,43 @@ json</li>
 <p>Example: </p>
 </li>
 </ul>
-<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-13-10">10</a></span>
-<span class="normal"><a href="#__codelineno-13-11">11</a></span>
-<span class="normal"><a href="#__codelineno-13-12">12</a></span>
-<span class="normal"><a href="#__codelineno-13-13">13</a></span>
-<span class="normal"><a href="#__codelineno-13-14">14</a></span>
-<span class="normal"><a href="#__codelineno-13-15">15</a></span>
-<span class="normal"><a href="#__codelineno-13-16">16</a></span>
-<span class="normal"><a href="#__codelineno-13-17">17</a></span>
-<span class="normal"><a href="#__codelineno-13-18">18</a></span>
-<span class="normal"><a href="#__codelineno-13-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">{</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">  </span><span class="s2">&quot;students&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dupont&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Jean&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Martin&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Marie&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">22</span>
-<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-13-14" name="__codelineno-13-14"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dubois&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pierre&quot;</span><span class="p">,</span>
-<a id="__codelineno-13-16" name="__codelineno-13-16"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">21</span>
-<a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-13-18" name="__codelineno-13-18"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-13-19" name="__codelineno-13-19"></a><span class="p">}</span>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-14-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-14-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-14-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-14-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-14-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-14-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-14-10">10</a></span>
+<span class="normal"><a href="#__codelineno-14-11">11</a></span>
+<span class="normal"><a href="#__codelineno-14-12">12</a></span>
+<span class="normal"><a href="#__codelineno-14-13">13</a></span>
+<span class="normal"><a href="#__codelineno-14-14">14</a></span>
+<span class="normal"><a href="#__codelineno-14-15">15</a></span>
+<span class="normal"><a href="#__codelineno-14-16">16</a></span>
+<span class="normal"><a href="#__codelineno-14-17">17</a></span>
+<span class="normal"><a href="#__codelineno-14-18">18</a></span>
+<span class="normal"><a href="#__codelineno-14-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">  </span><span class="s2">&quot;students&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dupont&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Jean&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Martin&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Marie&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">22</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14"></a><span class="w">      </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dubois&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15"></a><span class="w">      </span><span class="s2">&quot;surname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pierre&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16"></a><span class="w">      </span><span class="s2">&quot;age&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">21</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <strong><div style="color: Royalblue;">The JSON object</div></strong></p>
 <ul>
@@ -1692,74 +1723,23 @@ json</li>
 <li>Example: Suppose you have a JSON file called students.json containing the data shown above: <br></li>
 <li>To convert the content of the JSON file into a JavaScript object, use the method <code>JSON.parse()</code><br></li>
 </ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
-<span class="normal"><a href="#__codelineno-14-2">2</a></span>
-<span class="normal"><a href="#__codelineno-14-3">3</a></span>
-<span class="normal"><a href="#__codelineno-14-4">4</a></span>
-<span class="normal"><a href="#__codelineno-14-5">5</a></span>
-<span class="normal"><a href="#__codelineno-14-6">6</a></span>
-<span class="normal"><a href="#__codelineno-14-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">  </span><span class="c1">// Read the content of the JSON file</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">jsonData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">  </span><span class="c1">// Convert the content of json file to an object js</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">dataObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonData</span><span class="p">);</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">  </span><span class="c1">// display the different students</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dataObj</span><span class="p">);</span><span class="w"> </span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">6</a></span>
+<span class="normal"><a href="#__codelineno-15-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">  </span><span class="c1">// Read the content of the JSON file</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">jsonData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">  </span><span class="c1">// Convert the content of json file to an object js</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">dataObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonData</span><span class="p">);</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">  </span><span class="c1">// display the different students</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dataObj</span><span class="p">);</span><span class="w"> </span>
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>To convert a JavaScript object into a JSON string, use the method : <code>JSON.stringify()</code><br></li>
 </ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-15-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-15-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-15-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-15-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-15-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-15-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-15-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-15-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-15-10">10</a></span>
-<span class="normal"><a href="#__codelineno-15-11">11</a></span>
-<span class="normal"><a href="#__codelineno-15-12">12</a></span>
-<span class="normal"><a href="#__codelineno-15-13">13</a></span>
-<span class="normal"><a href="#__codelineno-15-14">14</a></span>
-<span class="normal"><a href="#__codelineno-15-15">15</a></span>
-<span class="normal"><a href="#__codelineno-15-16">16</a></span>
-<span class="normal"><a href="#__codelineno-15-17">17</a></span>
-<span class="normal"><a href="#__codelineno-15-18">18</a></span>
-<span class="normal"><a href="#__codelineno-15-19">19</a></span>
-<span class="normal"><a href="#__codelineno-15-20">20</a></span>
-<span class="normal"><a href="#__codelineno-15-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2"></a>
-<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="c1">// Objet JavaScript represents students</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">  </span><span class="p">{</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">    </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-8" name="__codelineno-15-8"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">23</span>
-<a id="__codelineno-15-9" name="__codelineno-15-9"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-15-10" name="__codelineno-15-10"></a><span class="w">  </span><span class="p">{</span>
-<a id="__codelineno-15-11" name="__codelineno-15-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Johnson&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-12" name="__codelineno-15-12"></a><span class="w">    </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Emily&quot;</span><span class="p">,</span>
-<a id="__codelineno-15-13" name="__codelineno-15-13"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">21</span>
-<a id="__codelineno-15-14" name="__codelineno-15-14"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-15-15" name="__codelineno-15-15"></a><span class="p">];</span>
-<a id="__codelineno-15-16" name="__codelineno-15-16"></a>
-<a id="__codelineno-15-17" name="__codelineno-15-17"></a><span class="c1">// Convertir the objet JavaScript to a string JSON</span>
-<a id="__codelineno-15-18" name="__codelineno-15-18"></a><span class="kd">let</span><span class="w"> </span><span class="nx">jsonData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="w"> </span><span class="nx">students</span><span class="o">:</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
-<a id="__codelineno-15-19" name="__codelineno-15-19"></a>
-<a id="__codelineno-15-20" name="__codelineno-15-20"></a><span class="c1">// write the string json into a file</span>
-<a id="__codelineno-15-21" name="__codelineno-15-21"></a><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s1">&#39;new_students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">jsonData</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="storage"><div style="color: Royalblue;">Storage</div></h2>
-<ul>
-<li>In JavaScript, "storage" refers to the ability to store data locally in the Web browser. There are two main types of storage: <strong>localStorage</strong> and <strong>sessionStorage</strong>.<br></li>
-<li><strong>localStorage</strong>: localStorage enables data to be stored persistently in the browser. This means that stored data remains available even after the browser has been closed and reopened. Data stored in localStorage remains until explicitly deleted by the user or erased by the script.<br></li>
-<li>
-<p><strong>sessionStorage</strong>: Unlike localStorage, sessionStorage stores data for the duration of a browser session. This means that data stored in sessionStorage is available as long as the browser window or tab remains open. Once the session ends (i.e. when the user closes the tab or browser), the data stored in the sessionStorage is deleted.</p>
-</li>
-<li>
-<p>Example with localStorage: <br>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
@@ -1775,26 +1755,42 @@ json</li>
 <span class="normal"><a href="#__codelineno-16-13">13</a></span>
 <span class="normal"><a href="#__codelineno-16-14">14</a></span>
 <span class="normal"><a href="#__codelineno-16-15">15</a></span>
-<span class="normal"><a href="#__codelineno-16-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="c1">// store data in localStorage</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">);</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;30&#39;</span><span class="p">);</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4"></a>
-<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="c1">// Get data from localStorage</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">);</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8"></a>
-<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : John</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : 30</span>
-<a id="__codelineno-16-11" name="__codelineno-16-11"></a>
-<a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="c1">// delete data from localStorage</span>
-<a id="__codelineno-16-13" name="__codelineno-16-13"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">);</span>
-<a id="__codelineno-16-14" name="__codelineno-16-14"></a>
-<a id="__codelineno-16-15" name="__codelineno-16-15"></a><span class="c1">// delete all data from localStorage</span>
-<a id="__codelineno-16-16" name="__codelineno-16-16"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
-</code></pre></div></td></tr></table></div></p>
+<span class="normal"><a href="#__codelineno-16-16">16</a></span>
+<span class="normal"><a href="#__codelineno-16-17">17</a></span>
+<span class="normal"><a href="#__codelineno-16-18">18</a></span>
+<span class="normal"><a href="#__codelineno-16-19">19</a></span>
+<span class="normal"><a href="#__codelineno-16-20">20</a></span>
+<span class="normal"><a href="#__codelineno-16-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="c1">// Objet JavaScript represents students</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="w">  </span><span class="p">{</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">    </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">23</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="w">  </span><span class="p">{</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Johnson&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="w">    </span><span class="nx">surname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Emily&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">21</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15"></a><span class="p">];</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16"></a>
+<a id="__codelineno-16-17" name="__codelineno-16-17"></a><span class="c1">// Convertir the objet JavaScript to a string JSON</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18"></a><span class="kd">let</span><span class="w"> </span><span class="nx">jsonData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="w"> </span><span class="nx">students</span><span class="o">:</span><span class="w"> </span><span class="nx">students</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19"></a>
+<a id="__codelineno-16-20" name="__codelineno-16-20"></a><span class="c1">// write the string json into a file</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21"></a><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s1">&#39;new_students.json&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">jsonData</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;utf-8&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="storage"><div style="color: Royalblue;">Storage</div></h2>
+<ul>
+<li>In JavaScript, "storage" refers to the ability to store data locally in the Web browser. There are two main types of storage: <strong>localStorage</strong> and <strong>sessionStorage</strong>.<br></li>
+<li><strong>localStorage</strong>: localStorage enables data to be stored persistently in the browser. This means that stored data remains available even after the browser has been closed and reopened. Data stored in localStorage remains until explicitly deleted by the user or erased by the script.<br></li>
+<li>
+<p><strong>sessionStorage</strong>: Unlike localStorage, sessionStorage stores data for the duration of a browser session. This means that data stored in sessionStorage is available as long as the browser window or tab remains open. Once the session ends (i.e. when the user closes the tab or browser), the data stored in the sessionStorage is deleted.</p>
 </li>
-<li>Example with sessionStorage: <br></li>
-</ul>
+<li>
+<p>Example with localStorage: <br>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
@@ -1810,22 +1806,57 @@ json</li>
 <span class="normal"><a href="#__codelineno-17-13">13</a></span>
 <span class="normal"><a href="#__codelineno-17-14">14</a></span>
 <span class="normal"><a href="#__codelineno-17-15">15</a></span>
-<span class="normal"><a href="#__codelineno-17-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1">// store data in sessionStorage</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">);</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Paris&#39;</span><span class="p">);</span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1">// store data in localStorage</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;30&#39;</span><span class="p">);</span>
 <a id="__codelineno-17-4" name="__codelineno-17-4"></a>
-<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="c1">// get data from sessionStorage</span>
-<a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
-<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ville</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="c1">// Get data from localStorage</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">);</span>
 <a id="__codelineno-17-8" name="__codelineno-17-8"></a>
-<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : Alice</span>
-<a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">city</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : Paris</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : John</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : 30</span>
 <a id="__codelineno-17-11" name="__codelineno-17-11"></a>
-<a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="c1">// delete data from sessionStorage</span>
-<a id="__codelineno-17-13" name="__codelineno-17-13"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">);</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="c1">// delete data from localStorage</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">);</span>
 <a id="__codelineno-17-14" name="__codelineno-17-14"></a>
-<a id="__codelineno-17-15" name="__codelineno-17-15"></a><span class="c1">// delete all data from sessionStorage</span>
-<a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15"></a><span class="c1">// delete all data from localStorage</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>Example with sessionStorage: <br></li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1">// store data in sessionStorage</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">);</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Paris&#39;</span><span class="p">);</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="c1">// get data from sessionStorage</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ville</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">);</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : Alice</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">city</span><span class="p">);</span><span class="w"> </span><span class="c1">// display : Paris</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a>
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="c1">// delete data from sessionStorage</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">);</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a><span class="c1">// delete all data from sessionStorage</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16"></a><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>Rq: It's important to note that localStorage and sessionStorage are limited in terms of storage size (typically a few megabytes) and should not be used to store sensitive data, such as credentials or personal information, as these are accessible in JavaScript and may be subject to security attacks.</li>
