@@ -146,7 +146,46 @@ Links: <br>
 - `<section>`: represents a generic section of a document. Rq: a section generally begins with a title <br>
 - `<nav>`: represents a section of a page with links to other pages or fragments of that page. <br>
 - `<div>`:(or division) is the generic container for stream content. As a "pure" container, the element represents nothing in itself. Instead, it's used to group content together so that it can be easily styled using the class or id attributes, to mark a section of a document as being written in a different language (using the lang attribute), and so on. Rq: This tag will be interesting to study when you discover CSS.<br>
-![example_Article_nav_section](example_Article_nav_section.png){:style="width:600px;height:500px;"} 
+![example_Article_nav_section](example_Article_nav_section.png){:style="width:200px;height:400px;"}
+
+```html linenums="1"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title name</title>
+  </head>
+  <body>
+    <header>
+      <h1> Main title<h1>
+      <img src="Logo_efrei.png" alt="logo efrei" with="50" height="50">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#About">About us</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <article>
+         <div class="css_class_section1_section2">
+          <section>
+            <h2>section1</h2>
+            <p>paragraph in section one</p>
+          </section>
+          <section>
+            <h2>section1</h2>
+            <p>paragraph in section one</p>
+          </section>
+        </div>
+      </article>
+      <footer>
+        <p>@ 2024 spring school</p>
+      </footer>
+    </nav>
+  </body>
+<html>
+
+```
 
 **<div style="color: Royalblue;">Html: Multimedia tags </div>**
 
