@@ -1437,7 +1437,6 @@ operation</div>
 
 <p><strong><div style="color: Royalblue;">The Promise object</div></strong></p>
 <ul>
-<li>A promise is an object that is returned and to which callbacks are attached rather than passing callbacks to a function.<br></li>
 <li>The "Promise" object which represents the completion or failure of an asynchronous operation.<br>
 ➢ A promise is an object that is returned and to which callbacks are attached, rather than passing callbacks to a function.<br>
 ➢ A promise in JavaScript is an object that represents the state of an asynchronous operation<br>
@@ -1489,7 +1488,7 @@ operation</div>
 <a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">  </span><span class="p">})</span>
 <a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DATA getted with success :&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">);</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="c1">// Faire quelque chose avec les données ici</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="c1">// Do something with data here</span>
 <a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">  </span><span class="p">})</span>
 <a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;an error has occurred :&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
@@ -1775,7 +1774,7 @@ json</li>
 </code></pre></div></td></tr></table></div>
 <strong><div style="color: Royalblue;">The JSON object</div></strong></p>
 <ul>
-<li>Objet global javascript</li>
+<li>Object global javascript</li>
 <li>Contains methods for :<ul>
 <li>interpreting JSON</li>
 <li>converting values to JSON</li>
@@ -1783,12 +1782,10 @@ json</li>
 </li>
 </ul>
 <p>&rarr; <strong>Parse</strong>: parse the string as JSON<br>
-  • If needed, transform the produced value and its properties and return the value <br>
-  • Syntaxe : <code>JSON.parse(texte[, revivificateur])</code> <br>
-&rarr; <strong>stringify</strong>: Returns a JSON string corresponding to the specified value <br>
+  • If needed, transform the produced value and its properties and return the value <br></p>
+<p>&rarr; <strong>stringify</strong>: Returns a JSON string corresponding to the specified value <br>
   • Includes some properties <br>
-  • Replaces property values in a way defined by the user. <br>
-  • Syntaxe : <code>JSON.stringify(valeur[, remplacement[, expace]])</code><br></p>
+  • Replaces property values in a way defined by the user. <br></p>
 <ul>
 <li>Example: Suppose you have a JSON file called students.json containing the data shown above: <br></li>
 <li>To convert the content of the JSON file into a JavaScript object, use the method <code>JSON.parse()</code><br></li>
