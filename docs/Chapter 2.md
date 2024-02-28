@@ -660,7 +660,6 @@ operation</div>
 
 **<div style="color: Royalblue;">The Promise object</div>**
 
-- A promise is an object that is returned and to which callbacks are attached rather than passing callbacks to a function.<br>
 - The "Promise" object which represents the completion or failure of an asynchronous operation.<br>
 ➢ A promise is an object that is returned and to which callbacks are attached, rather than passing callbacks to a function.<br>
 ➢ A promise in JavaScript is an object that represents the state of an asynchronous operation<br>
@@ -699,7 +698,7 @@ fetch('https://api.example.com/data')
   })
   .then(data => {
     console.log('DATA getted with success :', data);
-    // Faire quelque chose avec les données ici
+    // Do something with data here
   })
   .catch(error => {
     console.error('an error has occurred :', error);
@@ -880,18 +879,18 @@ json
 ```
 **<div style="color: Royalblue;">The JSON object</div>**
 
-- Objet global javascript
+- Object global javascript
 - Contains methods for :
      - interpreting JSON
      - converting values to JSON
 
 &rarr; **Parse**: parse the string as JSON<br>
   • If needed, transform the produced value and its properties and return the value <br>
-  • Syntaxe : `JSON.parse(texte[, revivificateur])` <br>
+
 &rarr; **stringify**: Returns a JSON string corresponding to the specified value <br>
   • Includes some properties <br>
   • Replaces property values in a way defined by the user. <br>
-  • Syntaxe : `JSON.stringify(valeur[, remplacement[, expace]])`<br>
+  
 
   - Example: Suppose you have a JSON file called students.json containing the data shown above: <br>
   - To convert the content of the JSON file into a JavaScript object, use the method `JSON.parse()`<br>
