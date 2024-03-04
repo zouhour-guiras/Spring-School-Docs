@@ -276,9 +276,4 @@ Anything you write to it will be specific to the current user
      })
 ```
 
-## <div style="color: Royalblue;"> Practical work </div>
-
-- Creation of a Vue CLI project
-- Translation of project pages (html, css and javascript) into components
-- Configuration of the different routes in index.js file.
 
