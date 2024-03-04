@@ -92,11 +92,11 @@
             <p>{{ rand }}</p>
         </div>
         <script>
-            new vue({
+            new Vue({
                 el:'#app',
                 data(){
                  return { 
-                    message:'hello world'
+                    message:'hello world',
                     num:0
                 };
                 },
@@ -149,11 +149,11 @@
             
         </div>
         <script>
-            new vue({
+            new Vue({
                 el:'#app',
                 data(){
                  return { 
-                    message:"<h1>it's a title</h1>" 
+                    msg:"<h1>it's a title</h1>" 
                 };
                 },
             })
@@ -186,7 +186,7 @@
         </div>
         </div>
         <script>
-            new vue({
+            new Vue({
                 el:'#app',
                 data(){
                  return { 
@@ -236,7 +236,7 @@
         <p v-bind:style="{ color: textColor }">This is a text with a dynamic color.</p>
         </div>
         <script>
-            new vue({
+            new Vue({
                 el:'#app',
                 data(){
                  return { 
@@ -265,7 +265,7 @@ Limited to : `<input>, <textarea>, <select>`
           <input type="text" v-model="message">
         </div>
         <script>
-            new vue({
+            new Vue({
                 el:'#app',
                 data(){
                  return { 
