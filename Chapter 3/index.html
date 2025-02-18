@@ -532,9 +532,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vue-cli" class="md-nav__link">
+  <a href="#vite" class="md-nav__link">
     <span class="md-ellipsis">
-      Vue CLI
+      VITE
     </span>
   </a>
   
@@ -691,7 +691,7 @@
 <p><strong>Conditional rendering</strong>: <code>(v-if, v-else, v-for … )</code>. </br></p>
 </li>
 <li>
-<p>Many developement tools : <strong>Vue-CLI</strong>, <strong>Vue-router</strong>, <strong>Vuex-Store</strong>, <strong>ESLint plugin</strong> … </br></p>
+<p>Many developement tools : <strong>Vite</strong>, <strong>Vue-router</strong>, <strong>Vuex-Store</strong>, <strong>ESLint plugin</strong> … </br></p>
 </li>
 </ul>
 <p><strong><div style="color: Royalblue;">Comparison with Angular and ReactJs</div></strong></p>
@@ -720,7 +720,7 @@
 <ul>
 <li>
 <p>Either by including the script:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type </span><span class="o">=</span> <span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></p>
 </li>
 <li>
@@ -778,7 +778,7 @@
 <span class="normal"><a href="#__codelineno-1-34">34</a></span>
 <span class="normal"><a href="#__codelineno-1-35">35</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type </span><span class="o">=</span> <span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
@@ -789,25 +789,25 @@
 <a id="__codelineno-1-11" name="__codelineno-1-11"></a>            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ rand }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <a id="__codelineno-1-12" name="__codelineno-1-12"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <a id="__codelineno-1-13" name="__codelineno-1-13"></a>        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">            </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">                </span><span class="nx">el</span><span class="o">:</span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">                    </span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;hello world&#39;</span><span class="p">,</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">                    </span><span class="nx">num</span><span class="o">:</span><span class="mf">0</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">                </span><span class="p">},</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">                </span><span class="nx">methods</span><span class="o">:</span><span class="p">{</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">                    </span><span class="nx">randomnumber</span><span class="p">(){</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">                        </span><span class="k">this</span><span class="p">.</span><span class="nx">num</span><span class="o">=</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">                    </span><span class="p">}</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">                </span><span class="p">},</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">                </span><span class="nx">computed</span><span class="o">:</span><span class="p">{</span>
-<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">                    </span><span class="nx">rand</span><span class="p">(){</span>
-<a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">                        </span><span class="k">return</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span>
-<a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">                    </span><span class="p">}</span>
-<a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">            </span><span class="p">})</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">           </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">                    </span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;hello world&#39;</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">                    </span><span class="nx">num</span><span class="o">:</span><span class="mf">0</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">                </span><span class="p">},</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">                </span><span class="nx">methods</span><span class="o">:</span><span class="p">{</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">                    </span><span class="nx">randomnumber</span><span class="p">(){</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">                        </span><span class="k">this</span><span class="p">.</span><span class="nx">num</span><span class="o">=</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">                    </span><span class="p">}</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">                </span><span class="p">},</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">                </span><span class="nx">computed</span><span class="o">:</span><span class="p">{</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">                    </span><span class="nx">rand</span><span class="p">(){</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">                        </span><span class="k">return</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">                    </span><span class="p">}</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">            </span><span class="p">});</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">            </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
 <a id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <a id="__codelineno-1-34" name="__codelineno-1-34"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -851,27 +851,31 @@
 <span class="normal"><a href="#__codelineno-3-18">18</a></span>
 <span class="normal"><a href="#__codelineno-3-19">19</a></span>
 <span class="normal"><a href="#__codelineno-3-20">20</a></span>
-<span class="normal"><a href="#__codelineno-3-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type </span><span class="o">=</span> <span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a>            <span class="p">&lt;</span><span class="nt">p</span> <span class="na">v-html</span><span class="o">=</span><span class="s">&quot;msg&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a>
-<a id="__codelineno-3-9" name="__codelineno-3-9"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10"></a>        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">            </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">                </span><span class="nx">el</span><span class="o">:</span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">                    </span><span class="nx">msg</span><span class="o">:</span><span class="s2">&quot;&lt;h1&gt;it&#39;s a title&lt;/h1&gt;&quot;</span><span class="w"> </span>
-<a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">                </span><span class="p">},</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">            </span><span class="p">})</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">v-html</span><span class="o">=</span><span class="s">&quot;message&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="c1">// Use of Vue.createApp() to create the application</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">        </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">                </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;h1&gt;it&#39;s a title&lt;/h1&gt;&quot;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">            </span><span class="p">};</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">    </span><span class="p">});</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">    </span><span class="c1">// Mount the application on the element with ID &#39;app&#39;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <strong><div style="color: Royalblue;">V-if/ v-else-if /v-else : Conditionally render a template element or fragment based on whether the expression value is true.</div></strong></p>
 <ul>
@@ -894,50 +898,24 @@
 <span class="normal"><a href="#__codelineno-4-15">15</a></span>
 <span class="normal"><a href="#__codelineno-4-16">16</a></span>
 <span class="normal"><a href="#__codelineno-4-17">17</a></span>
-<span class="normal"><a href="#__codelineno-4-18">18</a></span>
-<span class="normal"><a href="#__codelineno-4-19">19</a></span>
-<span class="normal"><a href="#__codelineno-4-20">20</a></span>
-<span class="normal"><a href="#__codelineno-4-21">21</a></span>
-<span class="normal"><a href="#__codelineno-4-22">22</a></span>
-<span class="normal"><a href="#__codelineno-4-23">23</a></span>
-<span class="normal"><a href="#__codelineno-4-24">24</a></span>
-<span class="normal"><a href="#__codelineno-4-25">25</a></span>
-<span class="normal"><a href="#__codelineno-4-26">26</a></span>
-<span class="normal"><a href="#__codelineno-4-27">27</a></span>
-<span class="normal"><a href="#__codelineno-4-28">28</a></span>
-<span class="normal"><a href="#__codelineno-4-29">29</a></span>
-<span class="normal"><a href="#__codelineno-4-30">30</a></span>
-<span class="normal"><a href="#__codelineno-4-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type </span><span class="o">=</span> <span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&quot;type==&#39;A&#39;&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a>          A
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&quot;type==&#39;B&#39;&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a>          B
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&quot;type==&#39;C&#39;&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14"></a>          C
-<a id="__codelineno-4-15" name="__codelineno-4-15"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">else</span><span class="p">&gt;</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17"></a>          Not A/B/C
-<a id="__codelineno-4-18" name="__codelineno-4-18"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20"></a>        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="w">            </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22"></a><span class="w">                </span><span class="nx">el</span><span class="o">:</span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<a id="__codelineno-4-25" name="__codelineno-4-25"></a><span class="w">                    </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;Z&quot;</span>
-<a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="w">                </span><span class="p">},</span>
-<a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="w">            </span><span class="p">})</span>
-<a id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-4-30" name="__codelineno-4-30"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-4-31" name="__codelineno-4-31"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&quot;isVisible&quot;</span><span class="p">&gt;</span>This is a conditional message displayed with v-if.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">v-else</span><span class="p">&gt;</span>The message is hidden.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">        </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">              </span><span class="nx">isVisible</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">            </span><span class="p">};</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">    </span><span class="p">});</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div></li>
 </ul>
 <p><strong><div style="color: Royalblue;">V-on : attach an event listener to an element</div></strong>
@@ -959,23 +937,53 @@
 <span class="normal"><a href="#__codelineno-5-14">14</a></span>
 <span class="normal"><a href="#__codelineno-5-15">15</a></span>
 <span class="normal"><a href="#__codelineno-5-16">16</a></span>
-<span class="normal"><a href="#__codelineno-5-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="cm">&lt;!--method handler--&gt;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">v-on:click</span><span class="o">=</span><span class="s">&quot;doThis&quot;</span><span class="p">&gt;</span>click<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="cm">&lt;!--dynamic event--&gt;</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">v-on:</span><span class="err">[</span><span class="na">event</span><span class="err">]=&quot;</span><span class="na">doThis</span><span class="err">&quot;</span><span class="p">&gt;</span>click<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="cm">&lt;!--inline statement--&gt;</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">v-on:click</span><span class="o">=</span><span class="s">&quot;doThis(&#39;hello&#39;,$event)&quot;</span><span class="p">&gt;</span>click<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a>
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="cm">&lt;!--shorthand--&gt;</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">click</span><span class="o">=</span><span class="s">&quot;doThis&quot;</span><span class="p">&gt;</span>click<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span>
+<span class="normal"><a href="#__codelineno-5-30">30</a></span>
+<span class="normal"><a href="#__codelineno-5-31">31</a></span>
+<span class="normal"><a href="#__codelineno-5-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Counter with v-on:click<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Counter : {{ count }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a>        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">v-on:click</span><span class="o">=</span><span class="s">&quot;increment&quot;</span><span class="p">&gt;</span>Increment<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a>        <span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">click</span><span class="o">=</span><span class="s">&quot;decrement&quot;</span><span class="p">&gt;</span>Decrement<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <a id="__codelineno-5-12" name="__codelineno-5-12"></a>
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="cm">&lt;!--shorthand dynamic event--&gt;</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="err">@[</span><span class="na">event</span><span class="err">]=&quot;</span><span class="na">doThis</span><span class="err">&quot;</span><span class="p">&gt;</span>click<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a>
-<a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="cm">&lt;!--stop propagation--&gt;</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">click</span><span class="err">.</span><span class="na">stop</span><span class="o">=</span><span class="s">&quot;doThis&quot;</span><span class="p">&gt;</span>click<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="w">            </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="w">                    </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="c1">// Initialization of the count at 0</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="w">            </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="w">                </span><span class="nx">increment</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22"></a><span class="w">                    </span><span class="k">this</span><span class="p">.</span><span class="nx">count</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// Increment the counter</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23"></a><span class="w">                </span><span class="p">},</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24"></a><span class="w">                </span><span class="nx">decrement</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25"></a><span class="w">                    </span><span class="k">this</span><span class="p">.</span><span class="nx">count</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// Decrement the counter</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28"></a><span class="w">        </span><span class="p">});</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29"></a><span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30"></a><span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <strong><div style="color: Royalblue;">V-bind : Dynamically bind one or more attributes or a component to an expression.</div></strong></p>
 <ul>
@@ -1002,21 +1010,21 @@
 <span class="normal"><a href="#__codelineno-6-19">19</a></span>
 <span class="normal"><a href="#__codelineno-6-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type </span><span class="o">=</span> <span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-6-7" name="__codelineno-6-7"></a>        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">v-bind:style</span><span class="o">=</span><span class="s">&quot;{ color: textColor }&quot;</span><span class="p">&gt;</span>This is a text with a dynamic color.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <a id="__codelineno-6-8" name="__codelineno-6-8"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <a id="__codelineno-6-9" name="__codelineno-6-9"></a>        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">            </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">                </span><span class="nx">el</span><span class="o">:</span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">                    </span><span class="nx">textColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="w"> </span><span class="c1">// Text color initialization</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="w">                </span><span class="p">},</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="w">            </span><span class="p">})</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">          </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="w">                    </span><span class="nx">textColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="w"> </span><span class="c1">// Text color initialization</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="w">                </span><span class="p">},</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="w">            </span><span class="p">});</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="w">        </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
 <a id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <a id="__codelineno-6-19" name="__codelineno-6-19"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -1045,26 +1053,56 @@
 <span class="normal"><a href="#__codelineno-7-17">17</a></span>
 <span class="normal"><a href="#__codelineno-7-18">18</a></span>
 <span class="normal"><a href="#__codelineno-7-19">19</a></span>
-<span class="normal"><a href="#__codelineno-7-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type </span><span class="o">=</span> <span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>          <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;message&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="w">            </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">                </span><span class="nx">el</span><span class="o">:</span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="w">                </span><span class="nx">data</span><span class="p">(){</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">                 </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">                    </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="c1">//  initialization of the message</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">                </span><span class="p">},</span>
-<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="w">            </span><span class="p">})</span>
-<a id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-7-19" name="__codelineno-7-19"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-7-20">20</a></span>
+<span class="normal"><a href="#__codelineno-7-21">21</a></span>
+<span class="normal"><a href="#__codelineno-7-22">22</a></span>
+<span class="normal"><a href="#__codelineno-7-23">23</a></span>
+<span class="normal"><a href="#__codelineno-7-24">24</a></span>
+<span class="normal"><a href="#__codelineno-7-25">25</a></span>
+<span class="normal"><a href="#__codelineno-7-26">26</a></span>
+<span class="normal"><a href="#__codelineno-7-27">27</a></span>
+<span class="normal"><a href="#__codelineno-7-28">28</a></span>
+<span class="normal"><a href="#__codelineno-7-29">29</a></span>
+<span class="normal"><a href="#__codelineno-7-30">30</a></span>
+<span class="normal"><a href="#__codelineno-7-31">31</a></span>
+<span class="normal"><a href="#__codelineno-7-32">32</a></span>
+<span class="normal"><a href="#__codelineno-7-33">33</a></span>
+<span class="normal"><a href="#__codelineno-7-34">34</a></span>
+<span class="normal"><a href="#__codelineno-7-35">35</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Example of using v-model<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Enter your name&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Bonjour, {{ name }}!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Choice of favorite color<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a>        <span class="p">&lt;</span><span class="nt">select</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;favoriteColor&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a>            <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Select a color<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a>            <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">&gt;</span>Red<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a>            <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;blue&quot;</span><span class="p">&gt;</span>Blue<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a>            <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;green&quot;</span><span class="p">&gt;</span>Green<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a>        <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Your favorite color is : {{ favoriteColor }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="w">            </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="w">                    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Name by defaut</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="w">                    </span><span class="nx">favoriteColor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="c1">// Favorite color by defaut</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30"></a><span class="w">        </span><span class="p">});</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31"></a>
+<a id="__codelineno-7-32" name="__codelineno-7-32"></a><span class="w">        </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <p><strong><div style="color: Royalblue;">V-for : to iterate over a collection of data.</div></strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
@@ -1093,45 +1131,33 @@
 <span class="normal"><a href="#__codelineno-8-24">24</a></span>
 <span class="normal"><a href="#__codelineno-8-25">25</a></span>
 <span class="normal"><a href="#__codelineno-8-26">26</a></span>
-<span class="normal"><a href="#__codelineno-8-27">27</a></span>
-<span class="normal"><a href="#__codelineno-8-28">28</a></span>
-<span class="normal"><a href="#__codelineno-8-29">29</a></span>
-<span class="normal"><a href="#__codelineno-8-30">30</a></span>
-<span class="normal"><a href="#__codelineno-8-31">31</a></span>
-<span class="normal"><a href="#__codelineno-8-32">32</a></span>
-<span class="normal"><a href="#__codelineno-8-33">33</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7"></a>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8"></a>            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&quot;item in items&quot;</span> <span class="na">:key</span><span class="o">=</span><span class="s">&quot;item.id&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9"></a>                {{ item.name}}
-<a id="__codelineno-8-10" name="__codelineno-8-10"></a>            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11"></a>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<a id="__codelineno-8-12" name="__codelineno-8-12"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13"></a>
-<a id="__codelineno-8-14" name="__codelineno-8-14"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-8-15" name="__codelineno-8-15"></a><span class="w">        </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="w">            </span><span class="nx">el</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+<span class="normal"><a href="#__codelineno-8-27">27</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Fruits List<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a>            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&quot;fruit in fruits&quot;</span> <span class="na">:key</span><span class="o">=</span><span class="s">&quot;fruit&quot;</span><span class="p">&gt;</span>{{ fruit }}<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
 <a id="__codelineno-8-17" name="__codelineno-8-17"></a><span class="w">            </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-8-18" name="__codelineno-8-18"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-8-19" name="__codelineno-8-19"></a><span class="w">                    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-8-20" name="__codelineno-8-20"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 1&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-8-21" name="__codelineno-8-21"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 2&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-8-22" name="__codelineno-8-22"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 3&#39;</span><span class="w"> </span><span class="p">}</span>
-<a id="__codelineno-8-23" name="__codelineno-8-23"></a><span class="w">                    </span><span class="p">]</span>
-<a id="__codelineno-8-24" name="__codelineno-8-24"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-8-25" name="__codelineno-8-25"></a><span class="w">            </span><span class="p">},</span>
-<a id="__codelineno-8-26" name="__codelineno-8-26"></a><span class="w">            </span><span class="nx">mounted</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-8-27" name="__codelineno-8-27"></a><span class="w">                </span><span class="c1">// Add a new element to items</span>
-<a id="__codelineno-8-28" name="__codelineno-8-28"></a><span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 4&#39;</span><span class="w"> </span><span class="p">});</span>
-<a id="__codelineno-8-29" name="__codelineno-8-29"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-8-30" name="__codelineno-8-30"></a><span class="w">        </span><span class="p">});</span>
-<a id="__codelineno-8-31" name="__codelineno-8-31"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-8-32" name="__codelineno-8-32"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-8-33" name="__codelineno-8-33"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19"></a><span class="w">                    </span><span class="nx">fruits</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Banana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Orange&#39;</span><span class="p">],</span><span class="w"> </span>
+<a id="__codelineno-8-20" name="__codelineno-8-20"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22"></a><span class="w">        </span><span class="p">});</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23"></a>
+<a id="__codelineno-8-24" name="__codelineno-8-24"></a><span class="w">        </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="components"><div style="color: Royalblue;">Components</div></h2>
 <ul>
@@ -1146,7 +1172,7 @@
 </ul>
 <p><img alt="component" src="../component.png" style="width:400px;height:150px;" /></br></p>
 <ul>
-<li>In Vue, a component is a Vue instance with well-predefined options. Example : <br></li>
+<li>Example : <br></li>
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
@@ -1181,114 +1207,40 @@
 <span class="normal"><a href="#__codelineno-9-31">31</a></span>
 <span class="normal"><a href="#__codelineno-9-32">32</a></span>
 <span class="normal"><a href="#__codelineno-9-33">33</a></span>
-<span class="normal"><a href="#__codelineno-9-34">34</a></span>
-<span class="normal"><a href="#__codelineno-9-35">35</a></span>
-<span class="normal"><a href="#__codelineno-9-36">36</a></span>
-<span class="normal"><a href="#__codelineno-9-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a>        <span class="p">&lt;</span><span class="nt">component1</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">component1</span><span class="p">&gt;</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a>        <span class="p">&lt;</span><span class="nt">custom-list-item</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&quot;item in items&quot;</span> <span class="na">:key</span><span class="o">=</span><span class="s">&quot;item.id&quot;</span> <span class="na">:name</span><span class="o">=</span><span class="s">&quot;item.name&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">custom-list-item</span><span class="p">&gt;</span>
-<a id="__codelineno-9-9" name="__codelineno-9-9"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-9-10" name="__codelineno-9-10"></a>
-<a id="__codelineno-9-11" name="__codelineno-9-11"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="w">        </span><span class="c1">//Create component</span>
-<a id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="w">        </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;component1&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="w">            </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;h1&gt; This is the title of the component &lt;/h1&gt;&#39;</span><span class="w"> </span><span class="c1">// Template of the component</span>
-<a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="w">        </span><span class="p">});</span>
-<a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">        </span><span class="c1">// We can also pass parameters to a component custom-list-item</span>
-<a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">        </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;custom-list-item&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="w">            </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span><span class="w"> </span><span class="c1">// Define the property &#39;name&#39; for the component</span>
-<a id="__codelineno-9-19" name="__codelineno-9-19"></a><span class="w">            </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;li&gt;{{ name }}&lt;/li&gt;&#39;</span><span class="w"> </span><span class="c1">// Template of the component</span>
-<a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="w">        </span><span class="p">});</span>
-<a id="__codelineno-9-21" name="__codelineno-9-21"></a>
-<a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="w">        </span><span class="c1">// creation of vue instance</span>
-<a id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="w">        </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-9-24" name="__codelineno-9-24"></a><span class="w">            </span><span class="nx">el</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-9-25" name="__codelineno-9-25"></a><span class="w">            </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-9-26" name="__codelineno-9-26"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-9-27" name="__codelineno-9-27"></a><span class="w">                    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-9-28" name="__codelineno-9-28"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 1&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-9-29" name="__codelineno-9-29"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 2&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-9-30" name="__codelineno-9-30"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 3&#39;</span><span class="w"> </span><span class="p">}</span>
-<a id="__codelineno-9-31" name="__codelineno-9-31"></a><span class="w">                    </span><span class="p">]</span>
-<a id="__codelineno-9-32" name="__codelineno-9-32"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-9-33" name="__codelineno-9-33"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-9-34" name="__codelineno-9-34"></a><span class="w">        </span><span class="p">});</span>
-<a id="__codelineno-9-35" name="__codelineno-9-35"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-9-36" name="__codelineno-9-36"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-9-37" name="__codelineno-9-37"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
-<p><strong><div style="color: Royalblue;">Local components</div></strong>
-- We can declare the component on the view instance.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-10-10">10</a></span>
-<span class="normal"><a href="#__codelineno-10-11">11</a></span>
-<span class="normal"><a href="#__codelineno-10-12">12</a></span>
-<span class="normal"><a href="#__codelineno-10-13">13</a></span>
-<span class="normal"><a href="#__codelineno-10-14">14</a></span>
-<span class="normal"><a href="#__codelineno-10-15">15</a></span>
-<span class="normal"><a href="#__codelineno-10-16">16</a></span>
-<span class="normal"><a href="#__codelineno-10-17">17</a></span>
-<span class="normal"><a href="#__codelineno-10-18">18</a></span>
-<span class="normal"><a href="#__codelineno-10-19">19</a></span>
-<span class="normal"><a href="#__codelineno-10-20">20</a></span>
-<span class="normal"><a href="#__codelineno-10-21">21</a></span>
-<span class="normal"><a href="#__codelineno-10-22">22</a></span>
-<span class="normal"><a href="#__codelineno-10-23">23</a></span>
-<span class="normal"><a href="#__codelineno-10-24">24</a></span>
-<span class="normal"><a href="#__codelineno-10-25">25</a></span>
-<span class="normal"><a href="#__codelineno-10-26">26</a></span>
-<span class="normal"><a href="#__codelineno-10-27">27</a></span>
-<span class="normal"><a href="#__codelineno-10-28">28</a></span>
-<span class="normal"><a href="#__codelineno-10-29">29</a></span>
-<span class="normal"><a href="#__codelineno-10-30">30</a></span>
-<span class="normal"><a href="#__codelineno-10-31">31</a></span>
-<span class="normal"><a href="#__codelineno-10-32">32</a></span>
-<span class="normal"><a href="#__codelineno-10-33">33</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a>        <span class="p">&lt;</span><span class="nt">custom-list-item</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&quot;item in items&quot;</span> <span class="na">:key</span><span class="o">=</span><span class="s">&quot;item.id&quot;</span> <span class="na">:name</span><span class="o">=</span><span class="s">&quot;item.name&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">custom-list-item</span><span class="p">&gt;</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9"></a>
-<a id="__codelineno-10-10" name="__codelineno-10-10"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">        </span><span class="c1">// creation of vue instance</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">        </span><span class="ow">new</span><span class="w"> </span><span class="nx">Vue</span><span class="p">({</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">            </span><span class="nx">el</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#app&#39;</span><span class="p">,</span>
-<a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">            </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">                    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 1&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 2&#39;</span><span class="w"> </span><span class="p">},</span>
-<a id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="w">                        </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Item 3&#39;</span><span class="w"> </span><span class="p">}</span>
-<a id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="w">                    </span><span class="p">]</span>
-<a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="w">                </span><span class="p">};</span>
-<a id="__codelineno-10-22" name="__codelineno-10-22"></a><span class="w">            </span><span class="p">},</span>
-<a id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="w">            </span><span class="nx">components</span><span class="o">:</span><span class="p">{</span>
-<a id="__codelineno-10-24" name="__codelineno-10-24"></a><span class="w">                </span><span class="c1">// Local component</span>
-<a id="__codelineno-10-25" name="__codelineno-10-25"></a><span class="w">           </span><span class="s1">&#39;custom-list-item&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-10-26" name="__codelineno-10-26"></a><span class="w">            </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span><span class="w"> </span><span class="c1">// Define the property &#39;name&#39; for the component</span>
-<a id="__codelineno-10-27" name="__codelineno-10-27"></a><span class="w">            </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;li&gt;{{ name }}&lt;/li&gt;&#39;</span><span class="w"> </span><span class="c1">// Template of the component</span>
-<a id="__codelineno-10-28" name="__codelineno-10-28"></a><span class="w">        </span><span class="p">};</span>
-<a id="__codelineno-10-29" name="__codelineno-10-29"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-10-30" name="__codelineno-10-30"></a><span class="w">        </span><span class="p">});</span>
-<a id="__codelineno-10-31" name="__codelineno-10-31"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-10-32" name="__codelineno-10-32"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<a id="__codelineno-10-33" name="__codelineno-10-33"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-9-34">34</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/vue@3.3.4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Application Vue 3 with Components<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a>        <span class="p">&lt;</span><span class="nt">greeting</span> <span class="na">:name</span><span class="o">=</span><span class="s">&quot;userName&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">greeting</span><span class="p">&gt;</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="w">        </span><span class="c1">// Define the Greeting component</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">Greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">            </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span><span class="w"> </span><span class="c1">// Property received from parent</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">            </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;p&gt;Bonjour, {{ name }}!&lt;/p&gt;&#39;</span><span class="w"> </span><span class="c1">// Template of the component</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="w">        </span><span class="p">};</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19"></a>
+<a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Vue</span><span class="p">.</span><span class="nx">createApp</span><span class="p">({</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="w">            </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="w">                    </span><span class="nx">userName</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="w"> </span><span class="c1">// Variable to store the user name</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26"></a><span class="w">        </span><span class="p">});</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27"></a>
+<a id="__codelineno-9-28" name="__codelineno-9-28"></a><span class="w">        </span><span class="c1">// Save the component in the Vue application</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29"></a><span class="w">        </span><span class="nx">app</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;greeting&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">Greeting</span><span class="p">);</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30"></a>
+<a id="__codelineno-9-31" name="__codelineno-9-31"></a><span class="w">        </span><span class="nx">app</span><span class="p">.</span><span class="nx">mount</span><span class="p">(</span><span class="s1">&#39;#app&#39;</span><span class="p">);</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-9-33" name="__codelineno-9-33"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-9-34" name="__codelineno-9-34"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="single-file-components-sfc"><div style="color: Royalblue;">Single File Components - SFC</div></h2>
 <ul>
@@ -1312,21 +1264,33 @@
 </li>
 </ul>
 <p><img alt="SFC" src="../SFC.png" style="width:200px;height:100px;" /></br></p>
-<h2 id="vue-cli"><div style="color: Royalblue;">Vue CLI</div></h2>
-<p>Vue CLI is a Javascript Framework that lets you develop "Single Page Applications".<br>
-- Allows you to develop applications that are made with responsive javascript<br>
-- Allows the user to have a very nice and modern user experience.<br>
-- A command-line interface for eﬃcacious development.<br>
-- Vue CLI requires Node.js version 8.9 or higher (for new projects, it is now recommended to use 'vue create’).<br></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="err">#</span><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="o">-</span><span class="nx">g</span><span class="w"> </span><span class="err">@</span><span class="nx">vue</span><span class="o">/</span><span class="nx">cli</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="err">#</span><span class="nx">vue</span><span class="w"> </span><span class="err">—</span><span class="nx">version</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="err">#</span><span class="nx">vue</span><span class="w"> </span><span class="nx">create</span><span class="w"> </span><span class="nx">myvueproject</span>
-</code></pre></div></td></tr></table></div>
+<h2 id="vite"><div style="color: Royalblue;">VITE</div></h2>
 <ul>
-<li>When creating VueProject (with "vue create"), you can specify certain functionalities such as Babel, Router, Vuex...<br></li>
+<li>Vite is a fast and modern development tool created by Evan You, the creator of Vue.js, for building front-end web applications. It was designed to address some of the slowdowns encountered with tools like Webpack in complex JavaScript projects.<br></li>
+<li>
+<p>Vite is built to start the development server very quickly, even in large projects. This greatly enhances productivity, as developers no longer have to wait long for their projects to load or rebuild after each change.<br></p>
+</li>
+<li>
+<p>Thanks to on-demand compilation, Vite offers extremely fast HMR (Hot Module Replacement), allowing developers to see the changes they make to their code instantly during development without losing the application's state.<br></p>
+</li>
+<li>
+<p>To install the Vite tool, follow the steps below:<br></p>
+</li>
+<li>
+<p>Install a server: We will install the Node.js server, which will be used in the next lab session. You can download it from the official 
+   <a href="https://nodejs.org/fr">Node.js website: Node.js — Download Node.js®.</a><br></p>
+</li>
+<li>
+<p>Initialize a Vue project with Vite: After installing Node.js, open the command prompt (cmd), navigate to the directory where you want to create your project, and enter the following command to initialize a Vue project with Vite:<br></p>
+</li>
 </ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">create</span><span class="w"> </span><span class="nx">vite</span><span class="err">@</span><span class="nx">latest</span>
+</code></pre></div></td></tr></table></div>
+- It will ask you for the name of the project. Enter the name of your project (for example, vite-project).<br></p>
+<ul>
+<li>Next, choose the framework to use. Select Vue and then choose JavaScript.</li>
+</ul>
+<p><img alt="viteproject" src="../viteproject.png" style="width:200px;height:100px;" /></br></p>
 <p><strong>Main elements of the project View :</strong><br>
      - <strong>"node_modules"  directory</strong> : all your project's dependencies, directly managed by "npm".<br>
      - <strong>"src" directory</strong>: source code for your project (components, pages, etc.)<br>
@@ -1342,6 +1306,47 @@
 <img alt="parentChild" src="../parentChild.png" style="width:300px;height:150px;" /></br></p>
 <p><strong>Example with props:</strong>
 - <strong>Parent component</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span>
+<span class="normal"><a href="#__codelineno-11-16">16</a></span>
+<span class="normal"><a href="#__codelineno-11-17">17</a></span>
+<span class="normal"><a href="#__codelineno-11-18">18</a></span>
+<span class="normal"><a href="#__codelineno-11-19">19</a></span>
+<span class="normal"><a href="#__codelineno-11-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>    <span class="cm">&lt;!-- Utilisation du composant enfant et passage de la propriété &#39;message&#39; --&gt;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>    <span class="p">&lt;</span><span class="nt">child-component</span> <span class="na">message</span><span class="o">=</span><span class="s">&quot;Hello from parent&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">child-component</span><span class="p">&gt;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="k">import</span><span class="w"> </span><span class="nx">ChildComponent</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./child-component.vue&#39;</span><span class="p">;</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">  </span><span class="nx">components</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="w">    </span><span class="nx">ChildComponent</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="p">};</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17"></a>
+<a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="c">/* Styles globaux peuvent être ajoutés ici */</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+- <strong>Child component</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
@@ -1354,35 +1359,30 @@
 <span class="normal"><a href="#__codelineno-12-10">10</a></span>
 <span class="normal"><a href="#__codelineno-12-11">11</a></span>
 <span class="normal"><a href="#__codelineno-12-12">12</a></span>
-<span class="normal"><a href="#__codelineno-12-13">13</a></span>
-<span class="normal"><a href="#__codelineno-12-14">14</a></span>
-<span class="normal"><a href="#__codelineno-12-15">15</a></span>
-<span class="normal"><a href="#__codelineno-12-16">16</a></span>
-<span class="normal"><a href="#__codelineno-12-17">17</a></span>
-<span class="normal"><a href="#__codelineno-12-18">18</a></span>
-<span class="normal"><a href="#__codelineno-12-19">19</a></span>
-<span class="normal"><a href="#__codelineno-12-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;app&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a>    <span class="cm">&lt;!-- Utilisation du composant enfant et passage de la propriété &#39;message&#39; --&gt;</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4"></a>    <span class="p">&lt;</span><span class="nt">child-component</span> <span class="na">message</span><span class="o">=</span><span class="s">&quot;Hello from parent&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">child-component</span><span class="p">&gt;</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7"></a>
-<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="k">import</span><span class="w"> </span><span class="nx">ChildComponent</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./child-component.vue&#39;</span><span class="p">;</span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ message }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">  </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="p">};</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <a id="__codelineno-12-10" name="__codelineno-12-10"></a>
-<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">  </span><span class="nx">components</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="w">    </span><span class="nx">ChildComponent</span>
-<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="p">};</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-12-17" name="__codelineno-12-17"></a>
-<a id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-<a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="c">/* Styles globaux peuvent être ajoutés ici */</span>
-<a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="p">&lt;</span><span class="nt">style</span> <span class="na">scoped</span><span class="p">&gt;</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="c">/* Styles spécifiques au composant peuvent être ajoutés ici */</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-- <strong>Child component</strong></p>
+<p><strong>Example with $emit:</strong><br></p>
+<ul>
+<li>
+<p>The use of <code>$emit</code> and custom events are common in Vue.js to enable communication between parent and child components. </p>
+</li>
+<li>
+<p>Suppose you have two components, a parent called ParentComponent and a child called ChildComponent. The parent wishes to receive information from the child when a button is clicked in the child.</p>
+</li>
+</ul>
+<p><strong>Parent component</strong>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
@@ -1395,30 +1395,55 @@
 <span class="normal"><a href="#__codelineno-13-10">10</a></span>
 <span class="normal"><a href="#__codelineno-13-11">11</a></span>
 <span class="normal"><a href="#__codelineno-13-12">12</a></span>
-<span class="normal"><a href="#__codelineno-13-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ message }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4"></a>
-<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">  </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="p">};</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span>
+<span class="normal"><a href="#__codelineno-13-14">14</a></span>
+<span class="normal"><a href="#__codelineno-13-15">15</a></span>
+<span class="normal"><a href="#__codelineno-13-16">16</a></span>
+<span class="normal"><a href="#__codelineno-13-17">17</a></span>
+<span class="normal"><a href="#__codelineno-13-18">18</a></span>
+<span class="normal"><a href="#__codelineno-13-19">19</a></span>
+<span class="normal"><a href="#__codelineno-13-20">20</a></span>
+<span class="normal"><a href="#__codelineno-13-21">21</a></span>
+<span class="normal"><a href="#__codelineno-13-22">22</a></span>
+<span class="normal"><a href="#__codelineno-13-23">23</a></span>
+<span class="normal"><a href="#__codelineno-13-24">24</a></span>
+<span class="normal"><a href="#__codelineno-13-25">25</a></span>
+<span class="normal"><a href="#__codelineno-13-26">26</a></span>
+<span class="normal"><a href="#__codelineno-13-27">27</a></span>
+<span class="normal"><a href="#__codelineno-13-28">28</a></span>
+<span class="normal"><a href="#__codelineno-13-29">29</a></span>
+<span class="normal"><a href="#__codelineno-13-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Parent Component<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a>    <span class="cm">&lt;!-- Utilisation du composant enfant et écoute de l&#39;événement &#39;custom-event&#39; --&gt;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>    <span class="p">&lt;</span><span class="nt">child-component</span> <span class="err">@</span><span class="na">custom-event</span><span class="o">=</span><span class="s">&quot;handleCustomEvent&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">child-component</span><span class="p">&gt;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a>    <span class="cm">&lt;!-- Affichage du message reçu de l&#39;enfant --&gt;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Message from child: {{ messageFromChild }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
 <a id="__codelineno-13-10" name="__codelineno-13-10"></a>
-<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="p">&lt;</span><span class="nt">style</span> <span class="na">scoped</span><span class="p">&gt;</span>
-<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="c">/* Styles spécifiques au composant peuvent être ajoutés ici */</span>
-<a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="k">import</span><span class="w"> </span><span class="nx">ChildComponent</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./child-component.vue&#39;</span><span class="p">;</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="w">  </span><span class="nx">components</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16"></a><span class="w">    </span><span class="nx">ChildComponent</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18"></a><span class="w">  </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20"></a><span class="w">      </span><span class="nx">messageFromChild</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21"></a><span class="w">    </span><span class="p">};</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23"></a><span class="w">  </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24"></a><span class="w">    </span><span class="c1">// Fonction de gestion de l&#39;événement personnalisé émis par l&#39;enfant</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25"></a><span class="w">    </span><span class="nx">handleCustomEvent</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26"></a><span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">messageFromChild</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+<a id="__codelineno-13-27" name="__codelineno-13-27"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-13-28" name="__codelineno-13-28"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29"></a><span class="p">};</span>
+<a id="__codelineno-13-30" name="__codelineno-13-30"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p><strong>Example with $emit:</strong><br></p>
-<ul>
-<li>
-<p>The use of <code>$emit</code> and custom events are common in Vue.js to enable communication between parent and child components. </p>
-</li>
-<li>
-<p>Suppose you have two components, a parent called ParentComponent and a child called ChildComponent. The parent wishes to receive information from the child when a button is clicked in the child.</p>
-</li>
-</ul>
-<p><strong>Parent component</strong>
+<strong>Child component</strong>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
@@ -1437,86 +1462,25 @@
 <span class="normal"><a href="#__codelineno-14-16">16</a></span>
 <span class="normal"><a href="#__codelineno-14-17">17</a></span>
 <span class="normal"><a href="#__codelineno-14-18">18</a></span>
-<span class="normal"><a href="#__codelineno-14-19">19</a></span>
-<span class="normal"><a href="#__codelineno-14-20">20</a></span>
-<span class="normal"><a href="#__codelineno-14-21">21</a></span>
-<span class="normal"><a href="#__codelineno-14-22">22</a></span>
-<span class="normal"><a href="#__codelineno-14-23">23</a></span>
-<span class="normal"><a href="#__codelineno-14-24">24</a></span>
-<span class="normal"><a href="#__codelineno-14-25">25</a></span>
-<span class="normal"><a href="#__codelineno-14-26">26</a></span>
-<span class="normal"><a href="#__codelineno-14-27">27</a></span>
-<span class="normal"><a href="#__codelineno-14-28">28</a></span>
-<span class="normal"><a href="#__codelineno-14-29">29</a></span>
-<span class="normal"><a href="#__codelineno-14-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<span class="normal"><a href="#__codelineno-14-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3"></a>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Parent Component<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4"></a>    <span class="cm">&lt;!-- Utilisation du composant enfant et écoute de l&#39;événement &#39;custom-event&#39; --&gt;</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5"></a>    <span class="p">&lt;</span><span class="nt">child-component</span> <span class="err">@</span><span class="na">custom-event</span><span class="o">=</span><span class="s">&quot;handleCustomEvent&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">child-component</span><span class="p">&gt;</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6"></a>    <span class="cm">&lt;!-- Affichage du message reçu de l&#39;enfant --&gt;</span>
-<a id="__codelineno-14-7" name="__codelineno-14-7"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Message from child: {{ messageFromChild }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<a id="__codelineno-14-8" name="__codelineno-14-8"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-14-10" name="__codelineno-14-10"></a>
-<a id="__codelineno-14-11" name="__codelineno-14-11"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-14-12" name="__codelineno-14-12"></a><span class="k">import</span><span class="w"> </span><span class="nx">ChildComponent</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./child-component.vue&#39;</span><span class="p">;</span>
-<a id="__codelineno-14-13" name="__codelineno-14-13"></a>
-<a id="__codelineno-14-14" name="__codelineno-14-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-15" name="__codelineno-14-15"></a><span class="w">  </span><span class="nx">components</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-16" name="__codelineno-14-16"></a><span class="w">    </span><span class="nx">ChildComponent</span>
-<a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="w">  </span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-20" name="__codelineno-14-20"></a><span class="w">      </span><span class="nx">messageFromChild</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
-<a id="__codelineno-14-21" name="__codelineno-14-21"></a><span class="w">    </span><span class="p">};</span>
-<a id="__codelineno-14-22" name="__codelineno-14-22"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-14-23" name="__codelineno-14-23"></a><span class="w">  </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-24" name="__codelineno-14-24"></a><span class="w">    </span><span class="c1">// Fonction de gestion de l&#39;événement personnalisé émis par l&#39;enfant</span>
-<a id="__codelineno-14-25" name="__codelineno-14-25"></a><span class="w">    </span><span class="nx">handleCustomEvent</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-26" name="__codelineno-14-26"></a><span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">messageFromChild</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
-<a id="__codelineno-14-27" name="__codelineno-14-27"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-14-28" name="__codelineno-14-28"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-14-29" name="__codelineno-14-29"></a><span class="p">};</span>
-<a id="__codelineno-14-30" name="__codelineno-14-30"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
-<strong>Child component</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-15-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-15-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-15-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-15-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-15-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-15-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-15-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-15-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-15-10">10</a></span>
-<span class="normal"><a href="#__codelineno-15-11">11</a></span>
-<span class="normal"><a href="#__codelineno-15-12">12</a></span>
-<span class="normal"><a href="#__codelineno-15-13">13</a></span>
-<span class="normal"><a href="#__codelineno-15-14">14</a></span>
-<span class="normal"><a href="#__codelineno-15-15">15</a></span>
-<span class="normal"><a href="#__codelineno-15-16">16</a></span>
-<span class="normal"><a href="#__codelineno-15-17">17</a></span>
-<span class="normal"><a href="#__codelineno-15-18">18</a></span>
-<span class="normal"><a href="#__codelineno-15-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2"></a>  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3"></a>    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Child Component<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">click</span><span class="o">=</span><span class="s">&quot;sendMessageToParent&quot;</span><span class="p">&gt;</span>Send Message to Parent<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7"></a>
-<a id="__codelineno-15-8" name="__codelineno-15-8"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<a id="__codelineno-15-9" name="__codelineno-15-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-15-10" name="__codelineno-15-10"></a><span class="w">  </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-15-11" name="__codelineno-15-11"></a><span class="w">    </span><span class="c1">// Fonction pour envoyer un message au parent via un événement personnalisé</span>
-<a id="__codelineno-15-12" name="__codelineno-15-12"></a><span class="w">    </span><span class="nx">sendMessageToParent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-15-13" name="__codelineno-15-13"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Hello from child!&#39;</span><span class="p">;</span>
-<a id="__codelineno-15-14" name="__codelineno-15-14"></a><span class="w">      </span><span class="c1">// Émettre un événement personnalisé avec le message</span>
-<a id="__codelineno-15-15" name="__codelineno-15-15"></a><span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">$emit</span><span class="p">(</span><span class="s1">&#39;custom-event&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="p">);</span>
-<a id="__codelineno-15-16" name="__codelineno-15-16"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-15-17" name="__codelineno-15-17"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-15-18" name="__codelineno-15-18"></a><span class="p">};</span>
-<a id="__codelineno-15-19" name="__codelineno-15-19"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a>    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Child Component<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="err">@</span><span class="na">click</span><span class="o">=</span><span class="s">&quot;sendMessageToParent&quot;</span><span class="p">&gt;</span>Send Message to Parent<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10"></a><span class="w">  </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11"></a><span class="w">    </span><span class="c1">// Fonction pour envoyer un message au parent via un événement personnalisé</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12"></a><span class="w">    </span><span class="nx">sendMessageToParent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Hello from child!&#39;</span><span class="p">;</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14"></a><span class="w">      </span><span class="c1">// Émettre un événement personnalisé avec le message</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15"></a><span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">$emit</span><span class="p">(</span><span class="s1">&#39;custom-event&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="p">);</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="p">};</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div></p>
 <h2 id="vue-router"><div style="color: Royalblue;">vue-router</div></h2>
 <ul>
@@ -1524,10 +1488,16 @@
 <p>Users need different URLs to distinguish one page from another.</p>
 </li>
 <li>
-<p>Vue router allows components to be mapped to routes.</p>
+<p>Vue router allows components to be mapped to routes.<br></p>
+</li>
+<li>
+<p>Access the vite-project project and install Vue router:<br></p>
 </li>
 </ul>
-<p><strong><code># npm install vue-router@4</code>         Or               <code># vue add router</code></strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">vue</span><span class="o">-</span><span class="nx">router</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="nx">vue</span><span class="o">-</span><span class="nx">router</span>
+</code></pre></div></td></tr></table></div>
 <ol>
 <li>
 <p>Configure routes: path, name and component for each route in a Js file. <br></p>
