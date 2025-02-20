@@ -1583,10 +1583,57 @@
 <li>
 <p>Routes are defined in the router configuration file(router/index.js) to manage navigation between the various pages of your application.</p>
 </li>
+<li>
+<p>Configure the index.js file <br></p>
+</li>
 </ul>
+<p>You need to create a router folder inside the src directory, then create the index.js file and set up the different routes.<br></p>
+<p>Here is an example of index.js for the <strong>/</strong> and <strong>/about</strong> routes:<br></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span>
+<span class="normal"><a href="#__codelineno-18-17">17</a></span>
+<span class="normal"><a href="#__codelineno-18-18">18</a></span>
+<span class="normal"><a href="#__codelineno-18-19">19</a></span>
+<span class="normal"><a href="#__codelineno-18-20">20</a></span>
+<span class="normal"><a href="#__codelineno-18-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>// router/index.js
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>import { createRouter, createWebHistory } from &#39;vue-router&#39;;
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a>import TestVue from &#39;../components/TestVue.vue&#39;; 
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a>import AboutComponent from &#39;../components/AboutComponent.vue&#39;; 
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a>const routes = [
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a>{
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a>path: &#39;/&#39;,
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a>name: &#39;TestVue&#39;,
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a>component: TestVue 
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a>},
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a>{
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a>path: &#39;/about&#39;,
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a>name: &#39;About&#39;,
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a>component: AboutComponent 
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a>}
+<a id="__codelineno-18-16" name="__codelineno-18-16"></a>];
+<a id="__codelineno-18-17" name="__codelineno-18-17"></a>const router = createRouter({
+<a id="__codelineno-18-18" name="__codelineno-18-18"></a>history: createWebHistory(import.meta.env.BASE_URL),
+<a id="__codelineno-18-19" name="__codelineno-18-19"></a>routes
+<a id="__codelineno-18-20" name="__codelineno-18-20"></a>});
+<a id="__codelineno-18-21" name="__codelineno-18-21"></a>export default router;
+</code></pre></div></td></tr></table></div>
 <h2 id="practical-work"><div style="color: Royalblue;">Practical work</div></h2>
 <ul>
-<li>Creation of a Vue CLI project</li>
+<li>Creation of a Vue Vite project</li>
 <li>Translation of project pages (html, css and javascript) into components</li>
 <li>Configuration of the different routes in index.js file.</li>
 </ul>
